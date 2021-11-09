@@ -8,7 +8,7 @@
     </head>
     <body>
     <div class="container container-fluid text-center">
-        <form action="../backend/login.php" method="post">
+        <form action="../frontend/aaa.php" method="post">
             <label for="nick">Digite seu apelido</label>
             <br>
             <input type="text" name="nick_user">
