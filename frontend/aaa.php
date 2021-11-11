@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/style.css" rel="stylesheet">
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="../css/home.css" rel="stylesheet">
     <link rel="stylesheet" href="../estily/boots1.css">
     <link rel="stylesheet" href="../estily/boots2.java">
     <link rel="stylesheet" href="../estily/boots3.java">
   </head>
-  <body>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-<a class="navbar-brand" href="frontend/aaa.php"></a>
-  <img src=../img/logoteste.jpeg>
-  
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          3 traços
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="frontend/perfil.php">Perfil</a></li>
-          <li><a class="dropdown-item" href="frontend/mensagens.php">Mensagens</a></li>
-          <li><a class="dropdown-item" href="frontend/bulas.php">Bulas</a></li>
-          <li><a class="dropdown-item" href="frontend/salvos.php">Salvos</a></li>
-          <li><a class="dropdown-item" href="frontend/contato.php">Contato</a></li>
-          <li><a class="dropdown-item" href="frontend/sobre.php">Sobre</a></li>
-        </ul>
-    </li>
+    <a class="navbar-brand" href="#">
+      <img src="../img/logoteste.jpeg" alt="Logo" style="width:40px;" class="rounded-pill"> 
+    </a>
   </div>
+  <div class="container-fluid" style="right">
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Myself
+  </button>
+</div>
 </nav>
-  </body>
+<div class="offcanvas offcanvas-end" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Myself</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+          <a class="item" href="../frontend/perfil.php">Perfil</a><br>
+          <a class="item" href="../frontend/mensagens.php">Mensagens</a><br>
+          <a class="item" href="../frontend/bulas.php">Bulas</a><br>
+          <a class="item" href="../frontend/salvos.php">Salvos</a><br>
+          <a class="item" href="../frontend/contato.php">Contato</a><br>
+          <a class="item" href="../frontend/sobre.php">Sobre</a>
+  </div>
+</div>
+<div class="container p-5 my-3 border">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a border and some extra padding and margins.</p>
+</div>
+
+
+</body>
 </html>
