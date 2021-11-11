@@ -32,7 +32,8 @@
           <a class="item" href="../frontend/bulas.php">Bulas</a><br>
           <a class="item" href="../frontend/salvos.php">Salvos</a><br>
           <a class="item" href="../frontend/contato.php">Contato</a><br>
-          <a class="item" href="../frontend/sobre.php">Sobre</a>
+          <a class="item" href="../frontend/sobre.php">Sobre</a><br>
+          <a class="item" href="../app/index.php?sair">sair</a>
   </div>
 </div>
 <div class="container p-5 my-3 border">
@@ -41,7 +42,6 @@ Faça sua postagem
 <div class="container p-5 my-3 border">
   <h5>User</h5>
   <p>postagem</p>
-  <img src="#" alt="imagem da postagem (opcional)" style="width:40px;" class="rounded-pill">
 </div>
 
 </body>

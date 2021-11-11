@@ -10,4 +10,14 @@
             echo "cadastro realizado";
         }
     }
+    function inform($conn){
+        $acao = "SELECT * FROM users";
+
+        $pesq = mysqli_query($conn,$acao);
+
+        $lista = mysqli_fetch_array($pesq);
+
+        return $lista;     
+    }
+  
 
