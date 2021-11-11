@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <title>Cadastro</title>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<div class="container">
-        <form action="?" method="post">
-        <label for="Digite seu nome completo">Digite seu nome completo</label> 
+<title>Cadastro</title>
+</head>
+<div class="container container-fluid text-center">
+    <form action="?cadastrado" method="post">
+        <label for="nome_c">Digite seu nome completo</label>
         <br>
-        <input type="text" name="nome_user">
+        <input type="text" id=" nome_c" name="nome_user">
         <br>
         <label for="nick_user">Digite seu apelido</label>
         <br>
@@ -28,9 +29,5 @@
         <br>
         <input type="submit" name="cadastro" value="Criar cadastro">
         <br>
-        </form>
-        <form action="../frontend/login.php" method="post">
-        <input type="submit" name="login" value="Login">
-        <br>
-
-    </div>
+    </form>
+</div>
