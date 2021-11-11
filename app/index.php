@@ -23,11 +23,19 @@
 
     <?php
     if (isset($_GET['home'])) {
+
+        include_once '../frontend/home.php';
+
     } else if (isset($_GET['cadastro'])) {
 
         include_once '../frontend/cadastro.php';
 
-    } else if (isset($_GET['cadastrado'])) {
+    } else if (isset($_GET['sair'])) {
+        session_start();
+
+        header("Location: ../app/index.php");
+        
+        session_destroy();
 
     } else if (isset($_GET['home'])) {
 
