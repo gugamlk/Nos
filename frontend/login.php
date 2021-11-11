@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+<html lang="pt-BR">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
     <div class="container container-fluid text-center">
-        <form action="#" method="POST"> 
-            <label for="Nick">Nick (nome do usuario)</label>
+        <form action="../backend/login.php" method="post">
+            <label for="nick">Digite seu apelido</label>
             <br>
-            <input type="text" name="nick">
+            <input type="text" name="nick_user">
             <br>
-            <label for="senha">Senha</label>
+            <label for="senha">Digite sua senha</label>
             <br>
-            <input type="password" name="senha">
+            <input type="password" name="senha_user">
             <br>
-            <input type="submit" name="entrar" value="entrar">
-            <br>
-            <a href="?cadastro"> Não possui uma conta ainda?</a>
+            <input type="submit" name="entrar" value="Entrar">
         </form>
     </div>
-</body>
+    Não é cadastrado ainda?
+    <br>
+    <a href="../frontend/cadastro.php">Clique aqui para se cadastrar</a>
+    </body>
 </html>
