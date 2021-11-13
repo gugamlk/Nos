@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7ba9e2d-6507-487f-b3fc-9a2d24700ac9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Nos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estily/boots2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estily/boots3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/aaa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/bulas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/contato.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logoteste.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estily/boots1.css" beforeDir="false" afterPath="$PROJECT_DIR$/estily/boots1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/configuracoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/configuracoes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/mensagens.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/mensagens.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/salvos.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/salvos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/sobre.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/sobre.php" afterDir="false" />
-    </list>
+    <list default="true" id="c7ba9e2d-6507-487f-b3fc-9a2d24700ac9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636661869405</updated>
       <workItem from="1636661869407" duration="1007000" />
-      <workItem from="1636670506542" duration="310000" />
+      <workItem from="1636670506542" duration="467000" />
     </task>
     <servers />
   </component>
