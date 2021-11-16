@@ -14,7 +14,7 @@
     <title>Cadastro</title>
 </head>
 <div class="container">
-        <form action="?" method="post">
+        <form action="../backend/cadastro.php" method="post">
         <label for="Digite seu nome completo">Digite seu nome completo</label> 
         <br>
         <input type="text" name="nome_user">
@@ -37,5 +37,4 @@
         <form action="../frontend/login.php" method="post">
         <input type="submit" name="login" value="Login">
         <br>
-
     </div>

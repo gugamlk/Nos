@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="../estily/boots1.css">
     <link rel="stylesheet" href="../estily/boots2.java">
     <link rel="stylesheet" href="../estily/boots3.java">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../img/logoteste.jpeg" alt="Logo" style="width:40px;" class="rounded-pill"> 
+    </a>
+  </div>
     </a>
   </div>
   <div class="container-fluid" style="right">
@@ -36,12 +43,20 @@
           <a class="item" href="../app/index.php?sair">sair</a>
   </div>
 </div>
-<div class="container p-5 my-3 border">
-Faça sua postagem
+<div class="container mt-3">
+  <div class="card" style="width:400px">
+    <div class="card-header"><h4>user<h4></div>
+    <div class="card-body">
+    <textarea rows="1" cols="40" readonly>O que passa em sua cabeça?</textarea>
+
+    <label for="myfile">Anexar imagem:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  
 </div>
-<div class="container p-5 my-3 border">
-  <h5>User</h5>
-  <p>postagem</p>
+    <div class="card-footer">
+    <input type="submit" value="Publicar">
+    </div>
+  </div>
 </div>
 
 </body>
