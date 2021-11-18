@@ -22,6 +22,10 @@
   </div>
     </a>
   </div>
+  <div>
+
+      
+      </div>
   <div class="container-fluid" style="right">
   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
     Myself
@@ -57,6 +61,12 @@
     <input type="submit" value="Publicar">
     </div>
   </div>
+</div>
+
+<!-- Meio -->
+
+<div class="container" id="mainHome">
+
 </div>
 
 </body>

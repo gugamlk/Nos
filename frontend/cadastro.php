@@ -39,9 +39,15 @@
                 </div>
                 <br>
                 <div class="inputbox">
-                    <label for="senha">Digite sua senha</label>
+                    <label for="senha">Digite sua senha:</label>
                     <br>
                     <input type="password" name="senha_user" id="senha" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="idade">Digite a data do seu nascimento: </label>
+                    <br>
+                    <input type="date" name="idade_user" id="idade" required>
                 </div>
                 </fieldset>
                 <br>
