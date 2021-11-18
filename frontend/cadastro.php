@@ -11,50 +11,45 @@
     <link rel="stylesheet" href="../estily/boots3.java">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../estily/cadastroS.css">
 </head>
 <title>Cadastro</title>
 </head>
-
-<style>
-
-</style>
-
 <body>
     <div class="box">
-        <fieldset>
-            <legend><b>Cadastro de Novos Usuarios</b></legend>
-        </fieldset>
-
         <form action="../backend/cadastro.php" method="post">
-            <div class="inputbox">
-                <label for="nome_completo">Digite seu nome completo</label>
+            <h1>Cadastro</h1>
+            <fieldset>
+                <div class="inputbox">
+                    <label for="nome_completo">Digite seu nome completo</label>
+                    <br>
+                    <input type="text" name="nome_user" id="nome_completo" required>
+                </div>
                 <br>
-                <input type="text" name="nome_user" id="nome_completo">
-            </div>
-            <br>
-            <div class="inputbox">
-                <label for="nick_user">Digite seu apelido</label>
+                <div class="inputbox">
+                    <label for="nick_user">Digite seu apelido</label>
+                    <br>
+                    <input type="text" name="nick_user" id="nick_user" required>
+                </div>
                 <br>
-                <input type="text" name="nick_user" id="nick_user">
-            </div>
-            <br>
-            <div class="inputbox">
-                <label for="email">Digite seu email:</Label>
+                <div class="inputbox">
+                    <label for="email">Digite seu email:</Label>
+                    <br>
+                    <input type="email" name="email_user" id="email" required>
+                </div>
                 <br>
-                <input type="email" name="email_user" id="email">
-            </div>
-            <br>
-            <div class="inputbox">
-                <label for="senha">Digite sua senha</label>
+                <div class="inputbox">
+                    <label for="senha">Digite sua senha</label>
+                    <br>
+                    <input type="password" name="senha_user" id="senha" required>
+                </div>
+                </fieldset>
                 <br>
-                <input type="password" name="senha_user" id="senha">
-            </div>
-            <br>
-            <input type="submit" name="cadastro" value="Criar cadastro">
-            <br>
+                <button type="submit" name="cadastro"> Criar cadastro </button>
+                <br><br>
         </form>
-        <form action="../frontend/login.php" method="post">
-            <input type="submit" name="login" value="Login">
-            <br>
+     
+        <a href="../app/index.php"><button>Voltar</button></a>
+            
     </div>
 </body>

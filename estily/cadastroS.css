@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* mudar a cor*/
+    background-color: blue;
+    color: cornsilk;
+    border-radius: 20px;
+    padding: 15px;
+    width: 30%;
+    margin: 30px;
+}
+
+h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+fieldset {
+    border: 5px solid black;
+    margin: 15px;
+}
+
+.inputbox {
+    position: relative;
+    padding: 15px;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    /*espaço entre cada caracter inserido nos inputs*/
+    letter-spacing: 2px;
+}
+
+label {
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+    /*evento de click*/
+    pointer-events: none;
+    transition: .5s;
+}
+
+button {
+    background-color: black;
+    border: none;
+    padding: 15px;
+    color: white;
+    /*largura */
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    /* mudar o curssor*/
+    cursor: pointer;
+}

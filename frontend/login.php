@@ -17,9 +17,9 @@
     <div>
         <h1>Login</h1>
         <form action="../backend/login.php" method="post">
-            <input type="text" name="nick_user" placeholder="Nickname">
+            <input type="text" name="nick_user" placeholder="Nickname" required>
             <br><br>
-            <input type="password" name="senha_user" placeholder="Senha">
+            <input type="password" name="senha_user" placeholder="Senha" required>
             <br><br>
             <button type="submit" name="entrar">Entrar</button>
         </form>
