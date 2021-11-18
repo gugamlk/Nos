@@ -10,6 +10,7 @@
             echo "cadastro realizado";
         }
     }
+    #selecionar
     function inform($conn){
         $acao = "SELECT * FROM users";
 
@@ -19,5 +20,20 @@
 
         return $lista;     
     }
+    #Logar
+    function logar($conn, $nick, $senha){
+        #Selecionar o banco 
+        $realizando = "SELECT * users WHERE nick LIKE $nick and senha = $senha"; 
+
+        #pesquisando 
+        $resultado = mysqli_query($conn, $realizando);  
+        if($resultado){
+            echo "deu certo"; 
+        }else{
+            print_r($resultado); 
+        }
+
+    }
   
+
 

@@ -4,7 +4,7 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/home.css" rel="stylesheet">
+  <link href="../css/bulas.css" rel="stylesheet">
     <link rel="stylesheet" href="../estily/boots1.css">
     <link rel="stylesheet" href="../estily/boots2.java">
     <link rel="stylesheet" href="../estily/boots3.java">
@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <div class="col-sm-3">
+  <div class="col-sm-4">
     <div class="card">
     <div class="card-header text-center">
     <h5 class="card-title">nome do remedio 4</h5>
