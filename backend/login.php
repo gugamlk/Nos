@@ -5,7 +5,7 @@
     if(isset($_POST['entrar'])){
         session_start();
 
-        $nick = $_POST['nick_user'];
+        $nick = $_POST['email_user'];
         $senha = $_POST['senha_user'];
         
         logar($conn, $nick, $senha); 

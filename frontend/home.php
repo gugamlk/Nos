@@ -13,19 +13,42 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
- .row{
-   position: relative; 
-   top: 15px; 
+ .card{
+   border: none;
+ }
+ #card1{
+   border-right: 2px solid black;
+   border-radius: 0px;
+ }
+ #card2{
+   border-left: 2px solid black;
  }
 </style>
 <body>
-  <div class="container container-fluid text-center">
-    <div class="row">
-      <div class="col"><?php include_once 'nav/cabesa.php'; ?></div>
-      <div class="col"> <?php include_once 'main/infos.php'; ?></div>
-      <div class="col"><?php include_once 'main/insert.php'; ?></div>
+    <div class="container container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card" id="card1">
+              <div class="card-body">
+                <?php include_once 'main/cHome.php'?>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <?php include_once 'main/mHome.php' ?>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body" id="card2">
+                <?php include_once 'main/iHome.php'?>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
 </body>
-
 </html>

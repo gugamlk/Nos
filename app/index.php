@@ -22,6 +22,10 @@
 <body>
 
     <?php
+    session_start(); 
+
+    if(isset($_SESSION['logado'])){
+
     if (isset($_GET['home'])) {
 
         include_once '../frontend/home.php';
@@ -39,10 +43,13 @@
 
     } else if (isset($_GET['home'])) {
 
-    } else {
-        include_once '../frontend/login.php';
-    }
-
+    } 
+}else{
+    include_once '../frontend/login.php'; 
+}
+if(isset($_GET['error'])){
+    echo 'Suas Informações estão incorretas'; 
+}
     ?>
 
 </body>

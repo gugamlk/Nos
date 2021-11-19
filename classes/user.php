@@ -21,19 +21,32 @@
         return $lista;     
     }
     #Logar
-    function logar($conn, $nick, $senha){
+    function logar($conn, $email, $senha){
         #Selecionar o banco 
-        $realizando = "SELECT * users WHERE nick LIKE $nick and senha = $senha"; 
+        $realizando = "SELECT * FROM users WHERE senha LIKE '$senha'"; 
 
         #pesquisando 
-        $resultado = mysqli_query($conn, $realizando);  
+        $resultado = mysqli_query($conn, $realizando); 
+
         if($resultado){
-            echo "deu certo"; 
+        #array de verificação 
+        $verificacao = mysqli_fetch_array($resultado); 
+        
+        #verificação de dados 
+        if($email== $verificacao[3]){
+            session_start(); 
+
+            #afirmando o log 
+            $_SESSION['logado'] = true;
+
+            header("Location: ../app/index.php?home"); 
         }else{
-            print_r($resultado); 
+            header("Location: ../app/index.php?error");
         }
-
+    }else{
+        header("Location: ../app/index.php?Sem_User"); 
     }
+    } 
+
+    
   
-
-
