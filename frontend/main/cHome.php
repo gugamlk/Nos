@@ -17,6 +17,7 @@
        width: 100px;
        margin-left: 80px;
        background-color: white;
+       position: relative;
     }
 .navbar-nav{
     padding: 15px;
