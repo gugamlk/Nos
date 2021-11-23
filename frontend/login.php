@@ -13,18 +13,22 @@
     <link rel="stylesheet" href="../estily/loginS.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div>
-        <h1>Login</h1>
-        <form action="../backend/login.php" method="post">
-            <input type="email" name="email_user" placeholder="Email" required>
-            <br><br>
-            <input type="password" name="senha_user" placeholder="Senha" required>
-            <br><br>
-            <button type="submit" name="entrar">Entrar</button>
+<body class="body">
+    <div class="logar mx-auto">
+        <h1 class="titulo">Login</h1>
+        <form class="form" action="../backend/login.php" method="post">
+
+            <input type="email" name="email_user" placeholder="Seu email" required>
+            <br>
+            <br>
+            <input type="password" name="senha_user" placeholder="Sua Senha" required>
+            <br>
+            <br>
+            <button class= "button" type="submit" name="entrar">Entrar</button>
         </form>
         <br>
-        <a href="../frontend/cadastro.php"> <button> Clique aqui para se cadastrar </button></a>
+        <a href="../frontend/cadastro.php">
+        <button class="button"> Clique aqui para se cadastrar </button></a>
     </div>
 </body>
 

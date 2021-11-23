@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/home.css" rel="stylesheet">
+    <link href="../css/perfil.css" rel="stylesheet">
     <link rel="stylesheet" href="../estily/boots1.css">
     <link rel="stylesheet" href="../estily/boots2.java">
     <link rel="stylesheet" href="../estily/boots3.java">
@@ -13,7 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body class="body">
 <?php 
  session_start(); 
     if(isset($_SESSION['logado'])){
@@ -23,15 +23,15 @@
     <h3> voce não se encontra logado<a href="../app/index.php">logar</a>; 
     <?php }?>
 
-    <div class="card mx-auto" style="width:300px">
-  <img class="card-img-top" src="../img/perfil.png" alt="Imagem do usuario">
+    <div class="card mx-auto">
+  <img class="card-img-top" src="../img/fotouser.jpeg">
   <div class="card-body">
-    <h4 class="card-title">nome do usuario</h4>
-    <h6 class="card-subtitle text-muted">nickname</h6>
-    <h6 class="card-item">email do usuario</h6>
+    <h4 class="nomeu">nome do usuario</h4>
+    <h6 class="nicku">nickname</h6>
+    <h6 class="emailu">email do usuario</h6>
     
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#myModal">
 Editar
 </button>
 
@@ -42,23 +42,26 @@ Editar
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Editar Perfil</h4>
+        <h4 class="perfe modal-title">Editar Perfil</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
-      
-      <img src="#" class="rounded" alt="Imagem do Usuário">
-      <div class="form-floating mb-3">
-<br><br>
-      <label for="myfile">Anexar imagem:</label>
+      <div class="modal-body">
+
+      <img src="../img/fotouser.jpeg" class="img-fluid" alt="Imagem do Usuário">
+
+      <div class="form-floating">
+      <label for="myfile">Alterar foto de perfil:</label>
+      <br><br>
       <input type="file" id="myfile" name="myfile">
     </div>
-      <div class="form-floating mb-3">
+    
+      <div class="form-floating">
   <input type="text" class="form-control" id="floatingText">
-  <label for="floatingPassword">Nickname</label>
+  <label for="floatingText">Nickname</label>
 </div>
-      <div class="form-floating mb-3">
+      <div class="form-floating">
   <input type="email" class="form-control" id="floatingInput">
   <label for="floatingInput">Email address</label>
 </div>
@@ -66,10 +69,13 @@ Editar
   <input type="password" class="form-control" id="floatingPassword">
   <label for="floatingPassword">Password</label>
 </div>
+ </div>
+ 
+
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar Alterações</button>
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar Alterações</button>
+        <button type="button" class="buttona" data-bs-dismiss="modal">Salvar Alterações</button>
+        <button type="button" class="buttonb" data-bs-dismiss="modal">Cancelar Alterações</button>
       </div>
     </div>
   </div>

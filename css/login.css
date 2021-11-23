@@ -1,0 +1,28 @@
+.body {
+    background-color: #b4dadacb
+}
+.titulo {
+    font-family: Tahoma, sans-serif;
+}
+
+.logar {
+    background-color: #54b3b3;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+
+
+}
+.form {
+    font-family: Tahoma, sans-serif;
+}
+
+.button {
+    background-color: #89c0c2;
+    border-radius: 8px;
+    color: #58271b;
+    font-size: medium;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none; 
+}
