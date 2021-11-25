@@ -20,6 +20,7 @@
 
   #card2 {
     border-left: 2px solid black;
+    
   }
 </style>
 
@@ -34,11 +35,10 @@
         </div>
       </div>
       <div class="row">
-
         <div class="col">
           <div class="card">
             <div class="card-body">
-              <?php include_once 'main/mHome.php' ?>
+              <?php include_once '../backend/main.php' ?>
             </div>
           </div>
         </div>
