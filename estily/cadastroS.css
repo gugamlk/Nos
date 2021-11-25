@@ -8,7 +8,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     /* mudar a cor*/
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
     color: cornsilk;
     border-radius: 20px;
     padding: 15px;

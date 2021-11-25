@@ -58,15 +58,15 @@ Editar
     </div>
     
       <div class="form-floating">
-  <input type="text" class="form-control" id="floatingText">
+  <input type="text" class="form-control">
   <label for="floatingText">Nickname</label>
 </div>
       <div class="form-floating">
-  <input type="email" class="form-control" id="floatingInput">
+  <input type="email" class="form-control">
   <label for="floatingInput">Email address</label>
 </div>
 <div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword">
+  <input type="password" class="form-control">
   <label for="floatingPassword">Password</label>
 </div>
  </div>

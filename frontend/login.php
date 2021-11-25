@@ -14,16 +14,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="body">
-    <div class="logar mx-auto">
-        <h1 class="titulo">Login</h1>
+
+    <div class="logar">
+        <div class="titulo">
+            Login
+        </div>
         <form class="form" action="../backend/login.php" method="post">
 
-            <input type="email" name="email_user" placeholder="Seu email" required>
-            <br>
-            <br>
-            <input type="password" name="senha_user" placeholder="Sua Senha" required>
-            <br>
-            <br>
+        <div class="form-floating">
+  <input type="email" class="form-control" required>
+  <label for="floatingEmail">Seu email</label>
+</div>
+
+
+<div class="form-floating">
+  <input type="password" class="form-control" required>
+  <label for="floatingPasswordt">Sua Senha</label>
+</div>
             <button class= "button" type="submit" name="entrar">Entrar</button>
         </form>
         <br>
