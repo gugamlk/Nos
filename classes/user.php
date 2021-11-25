@@ -38,6 +38,7 @@
 
             #afirmando o log 
             $_SESSION['logado'] = true;
+            $_SESSION['id'] = $verificacao[0]; 
 
             header("Location: ../app/index.php?home"); 
         }else{

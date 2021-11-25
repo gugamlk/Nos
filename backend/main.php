@@ -29,7 +29,12 @@
              while($posts = mysqli_fetch_array($resultado)){
                 
     ?>
-
+<style>
+ img{
+   width: 250px;
+   text-align: center;
+ }
+</style>
     <div class="container-fluid">
         <div clss="row">
             <div class="col">
@@ -38,10 +43,11 @@
                         <h1><?php print_r($posts[1])?></h1>
                     </div>
                     <div class="card-body">
-                        sjadbasbhasbdjhada.s
+                        <img src="<?php print_r($posts[3])?>" alt="imagem não foi">                        <br><br>
+                        <?php print_r($posts[4])?>
                     </div>
                     <div class="card-footer">
-                        test-footer;
+                        <h4>Autor:<?php autor($conn, $posts);?></h4>
                     </div>
                 </div>
             </div>

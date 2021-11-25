@@ -43,10 +43,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
-            <div class="card-body" id="card2">
-              <?php include_once 'main/iHome.php'?>
-            </div>
+          <?php include_once 'main/iHome.php'; ?>
           </div>
         </div>
       </div>
