@@ -54,7 +54,7 @@
                 <button type="submit" name="cadastro"> Criar cadastro </button>
                 <br><br>
         </form>
-     
+
         <a href="../app/index.php"><button>Voltar</button></a>
             
     </div>

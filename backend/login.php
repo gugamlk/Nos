@@ -28,10 +28,10 @@ if (isset($_POST['entrar'])) {
             
             
         }else{
-            header("Location:../app/index.php?Senha_Errada");
+            header("Location:../frontend/login.php?senha_Errada");
         } 
     }else{
         
-        header("Location:../app/index.php?email_errado");
+        header("Location:../frontend/login.php?email_errado");
     }
 }

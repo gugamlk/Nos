@@ -32,7 +32,10 @@ container-fluid{
                     <br><br>
                     <input type="file" name="imagem">
                     <br><br>
-                    Adicione ""
+                    Adicione o conteudo do seu post:
+                    <br><br>
+                    <input type="text" name="conteudo">
+                    <br><br>
                     <input type="submit" name="inserir">
                 </form>
             </div>
