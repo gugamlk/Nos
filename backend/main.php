@@ -1,7 +1,3 @@
-<?php 
-    include_once '../classes/conexao.php';
-    include_once '../classes/postagens.php';
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,54 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Boostrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <title>Main</title>
 </head>
+
 <style>
-    #card3 {
-        top: 60px;
-        left: 298px;
+    img {
+        width: 200px;
+        border: 2px solid black;
+        margin-left: 22px;
     }
+
+    h4 {
+        text-align: center;
+    }
+
+    #main {
+        border: 2px solid black;
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #cont {}
 </style>
 
 <body>
-    <?php
 
-         $codigo = "SELECT * FROM postagens"; 
+        <?php 
+        include_once '../classes/conexao.php'; 
 
-         $resultado = mysqli_query($conn, $codigo); 
+        #----------------------------------------------------------------------------------------
+        #Selecionar o Banco de Dados
 
-         if($resultado){
-             while($posts = mysqli_fetch_array($resultado)){
-                
+        $selecao = "SELECT * FROM postagens"; 
+
+        $selecao_feita = mysqli_query($conn, $selecao);
     ?>
-<style>
- img{
-   width: 250px;
-   text-align: center;
- }
-</style>
-    <div class="container-fluid">
-        <div clss="row">
-            <div class="col">
-                <div class=card id="card3">
-                    <div class="card-header">
-                        <h1><?php print_r($posts[1])?></h1>
+     <style>
+    
+        .col-sm-4{
+            position: relative;
+            border: 1px solid black;
+            padding: 12px;
+        }
+        img{
+            width: 250px;
+            margin-left: 70px;
+        }
+        p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+     </style>
+     <div class="conatiner container-fluid">
+    <?php while($conjunto = mysqli_fetch_array($selecao_feita)){ ?>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-heard">
+                        <h4><?php echo$conjunto[1];?></h4>
                     </div>
                     <div class="card-body">
-                        <img src="<?php print_r($posts[3])?>" alt="imagem não foi">                        <br><br>
-                        <?php print_r($posts[4])?>
+                        <img src="<?php echo $conjunto[3]; ?>" alt="não foi">
+                        <br><br>
+                        <p><?php echo $conjunto[4]; ?></p>
                     </div>
-                    <div class="card-footer">
-                        <h4>Autor:<?php autor($conn, $posts);?></h4>
+                    <div class="card-footer text-center">
+                        Publicado Por: <?php echo $conjunto[2]; ?>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
-    </div>
-    <?php 
-             }
-        }
-    ?>
+        <br><br>
+        <?php }?>
+     </div>
 </body>
 
 </html>

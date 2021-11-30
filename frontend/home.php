@@ -38,7 +38,7 @@
         <div class="col">
           <div class="card">
             <div class="card-body">
-              <?php include_once '../backend/main.php' ?>
+              <?php include_once '../backend/main.php'; ?>
             </div>
           </div>
         </div>

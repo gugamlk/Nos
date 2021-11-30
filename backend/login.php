@@ -23,7 +23,7 @@ if (isset($_POST['entrar'])) {
             $_SESSION['log'] = "logado";
             $_SESSION['info_logado'] = $info_users; 
             
-            header("Location: ../frontend/home.php");
+            header("Location: ../backend/main.php");
             
             
         }else{
@@ -32,6 +32,7 @@ if (isset($_POST['entrar'])) {
     }else{
         
         header("Location:../frontend/login.php?email_errado");
+        
       }  
 }
 
