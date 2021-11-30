@@ -8,7 +8,7 @@ if (isset($_POST['entrar'])) {
     #------------------------------------------------------------------------------
     #Receber as informações dos usuarios existentes
 
-    $pegar_users = "SELECT * FROM users";
+    $pegar_users = "SELECT * FROM users WHERE email LIKE '$login_user[0]' ";
 
     $lista_users = mysqli_query($conn, $pegar_users);
 
@@ -16,7 +16,6 @@ if (isset($_POST['entrar'])) {
 
     #------------------------------------------------------------------------------
     #comparar as informações
-
     if($login_user[0] == $info_users[3]){
 
         if($login_user[1] == $info_users[4]){
@@ -33,5 +32,7 @@ if (isset($_POST['entrar'])) {
     }else{
         
         header("Location:../frontend/login.php?email_errado");
-    }
+      }  
 }
+
+?>

@@ -58,4 +58,9 @@
         <a href="../app/index.php"><button>Voltar</button></a>
             
     </div>
+    <?php 
+        if (isset($_GET['email_existe'])){
+    ?>
+    <h4>Esse email já esta vinculado a uma conta!</h4>
+    <?php } ?>
 </body>
