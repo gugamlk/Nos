@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
-    <title>Document</title>
+    <title>index</title>
 </head>
 
 <body>
@@ -24,32 +24,15 @@
     <?php
     session_start(); 
 
-    if(isset($_SESSION['logado'])){
-
-    if (isset($_GET['home'])) {
-
-        include_once '../frontend/home.php';
-
-    } else if (isset($_GET['cadastro'])) {
-
-        include_once '../frontend/cadastro.php';
-
-    } else if (isset($_GET['sair'])) {
-        session_start();
-
-        header("Location: ../app/index.php");
-        
-        session_destroy();
-
-    } else if (isset($_GET['home'])) {
-
-    } 
-}else{
-    include_once '../frontend/login.php'; 
-}
-if(isset($_GET['error'])){
-    echo 'Suas Informações estão incorretas'; 
-}
+    if ($_SESSION['log'] == 'logado'){
+           if(isset($_GET['sair'])){
+               session_destroy(); 
+               
+               header('Location:../app/index.php');
+           }
+    }else{
+        header("Location: ../frontend/login.php"); 
+    }
     ?>
 
 </body>

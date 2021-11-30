@@ -1,28 +1,37 @@
-<?php 
-    require_once '../classes/user.php';
-    require_once '../classes/conexao.php';
+<?php
+include_once '../classes/conexao.php';
+if (isset($_POST['entrar'])) {
+    session_start();
 
-    if(isset($_POST['entrar'])){
-        session_start();
+    $login_user = array($_POST['email_user'], $_POST['senha_user']);
 
-        $nick = $_POST['email_user'];
-        $senha = $_POST['senha_user'];
+    #------------------------------------------------------------------------------
+    #Receber as informações dos usuarios existentes
+
+    $pegar_users = "SELECT * FROM users";
+
+    $lista_users = mysqli_query($conn, $pegar_users);
+
+    $info_users = mysqli_fetch_array($lista_users);
+
+    #------------------------------------------------------------------------------
+    #comparar as informações
+
+    if($login_user[0] == $info_users[3]){
+
+        if($login_user[1] == $info_users[4]){
+
+            $_SESSION['log'] = "logado";
+            $_SESSION['info_logado'] = $info_users; 
+            
+            header("Location: ../frontend/home.php");
+            
+            
+        }else{
+            header("Location:../app/index.php?Senha_Errada");
+        } 
+    }else{
         
-        logar($conn, $nick, $senha); 
-         
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <a href="../app/index.php"><button>Voltar</button></a>
-        <?php
+        header("Location:../app/index.php?email_errado");
     }
-        ?>
-    </body>
-</html>
+}

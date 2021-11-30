@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="body">
-
+<!--
     <div class="logar">
         <div class="titulo">
             Login
@@ -36,7 +36,19 @@
         <br>
         <a href="../frontend/cadastro.php">
         <button class="button"> Clique aqui para se cadastrar </button></a>
-    </div>
+    </div>-->
+
+    <form action="../backend/login.php" method="POST">
+        Digite seu email:
+        <br>
+        <input type="email" name="email_user" required>
+        <br>
+        Insira Sua Senha:
+        <br>
+        <input type="password" name="senha_user" required>
+        <br>
+        <input type="submit" name="entrar">
+    </form>
 </body>
 
 </html>
