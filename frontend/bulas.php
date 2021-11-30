@@ -10,75 +10,98 @@
     <link rel="stylesheet" href="../estily/boots3.java">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-<body>
+
+</head>
+<body class="body">
+
+  <div class="titulo">
+    Bulas
+  </div>
+
+ <div class="row">
+
+   <div class="col">
+      <div class="card">
+
+      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+
+      <p class="remedionome card-text">Alprazolam</p>
+      <p class="remedioresumo card-text">É um remédio indicado para tratamento de transtornos de ansiedade e pânico, age entre 30 minutos ou até 2 horas, e alguns dos possíveis efeitos colaterais são sono, sedação, boca seca e irritabilidade.</p>  
+
+      <a href="../img/bula1.pdf" download>PDF da Bula</a>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+
+      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+
+      <p class="remedionome card-text">Alprazolam</p>
+      <p class="remedioresumo card-text">É um remédio indicado para tratamento de transtornos de ansiedade e pânico, age entre 30 minutos ou até 2 horas, e alguns dos possíveis efeitos colaterais são sono, sedação, boca seca e irritabilidade.</p>  
+
+      <a href="../img/bula1.pdf" download>PDF da Bula</a>
+
+      </div>
+</div>
+
+    <div class="col">
+      <div class="card">
+
+      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+
+      <p class="remedionome card-text">Alprazolam</p>
+      <p class="remedioresumo card-text">É um remédio indicado para tratamento de transtornos de ansiedade e pânico, age entre 30 minutos ou até 2 horas, e alguns dos possíveis efeitos colaterais são sono, sedação, boca seca e irritabilidade.</p>  
+
+      <a href="../img/bula1.pdf" download>PDF da Bula</a>
+
+      </div>
+</div>
+ 
+</div>
 
 <div class="row">
 
-<div class="container-fluid p-5 text-center">
-<h4> Bulas </h4> 
+   <div class="col">
+      <div class="card">
+
+      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+
+      <p class="remedionome card-text">Alprazolam</p>
+      <p class="remedioresumo card-text">É um remédio indicado para tratamento de transtornos de ansiedade e pânico, age entre 30 minutos ou até 2 horas, e alguns dos possíveis efeitos colaterais são sono, sedação, boca seca e irritabilidade.</p>  
+
+      <a href="../img/bula1.pdf" download>PDF da Bula</a>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+
+      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+
+      <p class="remedionome card-text">Alprazolam</p>
+      <p class="remedioresumo card-text">É um remédio indicado para tratamento de transtornos de ansiedade e pânico, age entre 30 minutos ou até 2 horas, e alguns dos possíveis efeitos colaterais são sono, sedação, boca seca e irritabilidade.</p>  
+
+      <a href="../img/bula1.pdf" download>PDF da Bula</a>
+
+      </div>
 </div>
 
+    <div class="col">
+      <div class="card">
 
-  <div class="col-sm-4">
-    <div class="card">
+      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
 
-    <div class="card-header text-center">
-    <h5 class="card-title">nome do remedio 1</h5>
-    </div>
+      <p class="remedionome card-text">Alprazolam</p>
+      <p class="remedioresumo card-text">É um remédio indicado para tratamento de transtornos de ansiedade e pânico, age entre 30 minutos ou até 2 horas, e alguns dos possíveis efeitos colaterais são sono, sedação, boca seca e irritabilidade.</p>  
 
-    <div class="card-body">
-  <img class="card-img-top" src="#" alt="imagem do remédio">
-    <p class="card-text">Resumo do remédio</p>
-    <a href="#" class="card-link">Link da bula</a>
-  </div>
+      <a href="../img/bula1.pdf" download>PDF da Bula</a>
 
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card">
-    <div class="card-header text-center">
-    <h5 class="card-title">nome do remedio 2</h5>
-    </div>
-    <div class="card-body">
-  <img class="card-img-top" src="#" alt="imagem do remédio">
-    <p class="card-text">Resumo do remédio</p>
-    <a href="#" class="card-link">Link da bula</a>
-  </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card">
-    <div class="card-header text-center">
-    <h5 class="card-title">nome do remedio 3</h5>
-    </div>
-    <div class="card-body">
-  <img class="card-img-top" src="#" alt="imagem do remédio">
-    <p class="card-text">Resumo do remédio</p>
-    <a href="#" class="card-link">Link da bula</a>
-  </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card">
-    <div class="card-header text-center">
-    <h5 class="card-title">nome do remedio 4</h5>
-    </div>
-    <div class="card-body">
-  <img class="card-img-top" src="#" alt="imagem do remédio">
-    <p class="card-text">Resumo do remédio</p>
-    <a href="#" class="card-link">Link da bula</a>
-  </div>
-    </div>
-  </div>
-
+      </div>
 </div>
-
-</div>
-</div>
+ 
 </div>
 
 </body>
