@@ -15,53 +15,34 @@
 </head>
 
 <body class="body">
-    <!--
-    <div class="logar">
-        <div class="titulo">
-            Login
-        </div>
-        <form class="form" action="../backend/login.php" method="post">
-
-        <div class="form-floating">
-  <input type="email" class="form-control" required>
-  <label for="floatingEmail">Seu email</label>
-</div>
-
-
-<div class="form-floating">
-  <input type="password" class="form-control" required>
-  <label for="floatingPasswordt">Sua Senha</label>
-</div>
-            <button class= "button" type="submit" name="entrar">Entrar</button>
-        </form>
-        <br>
-        <a href="../frontend/cadastro.php">
-        <button class="button"> Clique aqui para se cadastrar </button></a>
-    </div>-->
     <?php 
  if(isset($_GET['email_errado'])){
 ?>
-    <h4>Seu email esta incorreto</h4>
+    <h4>Seu email está incorreto.</h4>
     <br>
     <?php } if(isset($_GET['senha_Errada'])){ ?>
-    <h4>Sua Senha esta Incorreta</h4>
+    <h4>Sua Senha está incorreta.</h4>
     <br>
     <?php } ?>
-
+    <div class="logar">
+        <h4 class="titulo">Login</h4>
     <form action="../backend/login.php" method="POST">
-        Digite seu email:
+
+        <label> Insira seu email:
+            <br>
+        <input type="email" class="iemail" name="email_user" required>
+        </label>
+        
+        <label>Insira Sua Senha:
+            <br>
+        <input type="password" class="ipassword" name="senha_user" required>
+        </label>
         <br>
-        <input type="email" name="email_user" required>
-        <br>
-        Insira Sua Senha:
-        <br>
-        <input type="password" name="senha_user" required>
-        <br>
-        <input type="submit" name="entrar">
+        <input type="submit" class="button" name="entrar" value="Login">
     </form>
-    <br>
     <a href="../frontend/cadastro.php">
         <button class="button"> Clique aqui para se cadastrar </button></a>
+    </div>
 </body>
 
 </html>

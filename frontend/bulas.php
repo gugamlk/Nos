@@ -14,6 +14,10 @@
 </head>
 <body class="body">
 
+<div class="card-body">
+            <?php include_once 'main/cHome.php'?>
+          </div>
+          
   <div class="titulo">
     Bulas
   </div>

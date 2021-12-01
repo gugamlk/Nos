@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
 }
+
 .body {
-    background-color: #b4dadacb;
+    background-color: #b4dadacb
 }
 .titulo {
     font-family: Tahoma, sans-serif;
@@ -10,10 +11,13 @@
     text-align: center;
     font-size: xx-large;
 }
-
-.logar {
+label {
+    margin-top: 10px;
+}
+.box {
     background-color: #54b3b3;
-    width: 31.5%;
+    align-items: center;
+    width: 32%;
     border-radius: 10px;
     position: absolute;
     top: 50%;
@@ -24,28 +28,19 @@
     padding: 10px;
     display:block;
 }
-.titulo {
-    font-family: Verdana, sans-serif;
+
+
+.inputbox {
+    font-family: Tahoma, sans-serif;
     font-weight: bold;
-    text-align: center;
-}
-label {
-    margin-top: 10px;
-}
-.iemail {
     padding: 5px;
-    width: 380px;
-    border: 1px solid #89c0c2;
-    margin: auto;
-    border-radius: 6px;
-    background-color: #b4dadacb;
+
 }
 
-.ipassword {
+input {
     padding: 5px;
     width: 380px;
     border: 1px solid #89c0c2;
-    margin: auto;
     border-radius: 6px;
     background-color: #b4dadacb;
 }
@@ -57,9 +52,9 @@ label {
     font-size: medium;
     font-family: Tahoma,sans-serif;
     padding: 10px 15px;
-    margin-left: 5px;
+    margin-left: 10px;
     border: none; 
-    margin-top: 20px;
+
 }
 .button:hover {
     background-color: #b4dadacb;
