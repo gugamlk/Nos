@@ -1,8 +1,6 @@
 <?php 
-     session_start(); 
-
-    if($logado){
-        $_SESSION['log'] = true;
-        header("Location:../app/index.php");
-    }
+session_status(); 
+     if(isset($_SESSION['logado'])){
+         
+     }
 ?>

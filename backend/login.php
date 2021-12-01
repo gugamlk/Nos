@@ -1,42 +1,39 @@
-<?php 
-    require_once '../classes/user.php';
-    require_once '../classes/conexao.php';
+<?php
+include_once '../classes/conexao.php';
+if (isset($_POST['entrar'])) {
+    session_start();
 
-    if(isset($_POST['entrar'])){
-        session_start();
+    $login_user = array($_POST['email_user'], $_POST['senha_user']);
 
-        $lista = inform($conn); 
+    #------------------------------------------------------------------------------
+    #Receber as informações dos usuarios existentes
 
-        $nick = $_POST['nick_user'];
-        $senha = $_POST['senha_user'];
+    $pegar_users = "SELECT * FROM users WHERE email LIKE '$login_user[0]' ";
 
+    $lista_users = mysqli_query($conn, $pegar_users);
 
-        if($nick == $lista[2] && $senha == $lista[4]){
+    $info_users = mysqli_fetch_array($lista_users);
 
-            $_SESSION['logado'] = 1;
+    #------------------------------------------------------------------------------
+    #comparar as informações
+    if($login_user[0] == $info_users[3]){
 
-            header("Location: ../app/index.php?home");
+        if($login_user[1] == $info_users[4]){
 
+            $_SESSION['log'] = "logado";
+            $_SESSION['info_logado'] = $info_users; 
+            
+            header("Location: ../backend/main.php");
+            
+            
         }else{
-            if($nick != $lista[2]){
-                echo "Seu nick esta incorreto"; 
-            } else{
-                echo "Sua senha esta incorreta"; 
-            }
+            header("Location:../frontend/login.php?senha_Errada");
+        } 
+    }else{
+        
+        header("Location:../frontend/login.php?email_errado");
+        
+      }  
+}
+
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <a href="../app/index.php"><button>Voltar</button></a>
-        <?php
-        }   
-    } 
-        ?>
-    </body>
-</html>

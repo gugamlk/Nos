@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../css/login.css" rel="stylesheet">
-        <link rel="stylesheet" href="../estily/boots1.css">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estily/boots1.css">
     <link rel="stylesheet" href="../estily/boots2.java">
     <link rel="stylesheet" href="../estily/boots3.java">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body>
-    <div class="container container-fluid text-center">
-        <form action="../backend/login.php" method="post">
-            <label for="nick">Digite seu apelido</label>
-            <br>
-            <input type="text" name="nick_user">
-            <br>
-            <label for="senha">Digite sua senha</label>
-            <br>
-            <input type="password" name="senha_user">
-            <br>
-            <input type="submit" name="entrar" value="Entrar">
-        </form>
-    </div>
-    Não é cadastrado ainda?
+    <link rel="stylesheet" href="../estily/loginS.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="body">
+    <?php 
+ if(isset($_GET['email_errado'])){
+?>
+    <h4>Seu email está incorreto.</h4>
     <br>
-    <a href="../frontend/cadastro.php">Clique aqui para se cadastrar</a>
-    </body>
+    <?php } if(isset($_GET['senha_Errada'])){ ?>
+    <h4>Sua Senha está incorreta.</h4>
+    <br>
+    <?php } ?>
+    <div class="logar">
+        <h4 class="titulo">Login</h4>
+    <form action="../backend/login.php" method="POST">
+
+        <label> Insira seu email:
+            <br>
+        <input type="email" class="iemail" name="email_user" required>
+        </label>
+        
+        <label>Insira Sua Senha:
+            <br>
+        <input type="password" class="ipassword" name="senha_user" required>
+        </label>
+        <br>
+        <input type="submit" class="button" name="entrar" value="Login">
+    </form>
+    <a href="../frontend/cadastro.php">
+        <button class="button"> Clique aqui para se cadastrar </button></a>
+    </div>
+</body>
+
 </html>

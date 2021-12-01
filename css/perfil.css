@@ -1,0 +1,82 @@
+.body {
+    background-color: #b4dadacb;
+}
+.card {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+.card-body {
+    background-color: #54b3b3;
+    font-size: medium;
+}
+.nomeu   {
+    font-family: Verdana, sans-serif;
+    color:#1c3B59;
+}
+.nicku   {
+    font-family: Tahoma, sans-serif;
+    color: #1c3B59;
+}
+.emailu      {
+    font-family: Tahoma, sans-serif;
+    color: #1c3B59;
+}
+
+.modal-header {
+    background-color: #54b3b3 ;
+   
+}
+
+.perfe {
+    font-family: Verdana, sans-serif;
+    font-weight: bold
+}
+
+.modal-body {
+    background-color: #b4dadacb;
+    font-family: Tahoma, sans-serif;
+    color: #1c3B59;
+    font-size: medium;
+}
+
+.form-floating {
+    font-weight: bold;
+    padding: 5px;
+    margin: 2px;
+}
+
+.modal-footer {
+    background-color: #54b3b3 ;
+}
+.button {
+    background-color: #b4dadacb;
+    border-radius: 8px;
+    color: #1c3B59;
+    font-size: medium;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none;
+}
+
+.buttona {
+    background-color: #47f17a;
+    border-radius: 8px;
+    color: #1b582e;
+    font-size: medium;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none; 
+}
+ .buttonb {
+
+    background-color: #f14747;
+    border-radius: 8px;
+    color: #58271b;
+    font-size: medium;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none; 
+ }
