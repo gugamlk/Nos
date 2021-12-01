@@ -11,51 +11,51 @@
     <link rel="stylesheet" href="../estily/boots3.java">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../estily/cadastroS.css">
 </head>
 <title>Cadastro</title>
 </head>
-<body>
+<body class="body">
     <div class="box">
         <form action="../backend/cadastro.php" method="post">
-            <h1>Cadastro</h1>
+            <h4 class="titulo">Cadastro</h4>
             <fieldset>
                 <div class="inputbox">
-                    <label for="nome_completo">Digite seu nome completo</label>
-                    <br>
+                    <label for="nome_completo">Insira seu nome completo
+                    
                     <input type="text" name="nome_user" id="nome_completo" required>
+                    </label>
                 </div>
-                <br>
                 <div class="inputbox">
-                    <label for="nick_user">Digite seu apelido</label>
-                    <br>
+                    <label for="nick_user">Insira seu apelido
+                    
                     <input type="text" name="nick_user" id="nick_user" required>
+                    </label>
                 </div>
-                <br>
                 <div class="inputbox">
-                    <label for="email">Digite seu email:</Label>
-                    <br>
+                    <label for="email">Insira seu email:
+                  
                     <input type="email" name="email_user" id="email" required>
+                    </label>
                 </div>
-                <br>
                 <div class="inputbox">
-                    <label for="senha">Digite sua senha:</label>
-                    <br>
+                    <label for="senha">Insira sua senha:
+                   
                     <input type="password" name="senha_user" id="senha" required>
+                    </label>
                 </div>
-                <br>
                 <div class="inputbox">
-                    <label for="idade">Digite a data do seu nascimento: </label>
-                    <br>
+                    <label for="idade">Insira sua data de nascimento:
+                    
                     <input type="date" name="idade_user" id="idade" required>
+                    </label>
                 </div>
                 </fieldset>
                 <br>
-                <button type="submit" name="cadastro"> Criar cadastro </button>
+                <button type="submit" class="button" name="cadastro">Criar cadastro</button>
                 <br><br>
         </form>
 
-        <a href="../app/index.php"><button>Voltar</button></a>
+        <a href="../app/index.php"><button class="button">Voltar</button></a>
             
     </div>
     <?php 
