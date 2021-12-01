@@ -23,7 +23,7 @@ if (isset($_POST['entrar'])) {
             $_SESSION['log'] = "logado";
             $_SESSION['info_logado'] = $info_users; 
             
-            header("Location: ../backend/main.php");
+            header("Location: ../frontend/home.php");
             
             
         }else{

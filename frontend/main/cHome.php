@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <!-- Links -->
             <ul class="navbar-nav">
-                <a href="../app/index.php?home" class="navbar-brand">
+                <a href="../frontend/home.php" class="navbar-brand">
                     <img src="../img/logo_temp.png" alt="logotemp" id="logo">
                 </a>
                 <h2 class="myself"> Myself</h2>
