@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/91353c877b.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-
 <body class="body">
     <nav class="navbar navbar-expand-sm">
 

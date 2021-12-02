@@ -16,7 +16,7 @@
 </head>
 <body class="body">
     <div class="box">
-        <form action="../backend/cadastro.php" method="post">
+        <form action="../backend/cadastro.php" method="post" enctype="multipart/form-data">
             <h4 class="titulo">Cadastro</h4>
             <fieldset>
                 <div class="inputbox">
@@ -49,6 +49,13 @@
                     <input type="date" name="idade_user" id="idade" required>
                     </label>
                 </div>
+                <div class="inputbox">
+                    <label for="idade">Insira uma imagem para o seu perfil: 
+                    
+                    <input type="file" name="imagem_user" id="idade" required>
+                    </label>
+                </div>
+
                 </fieldset>
                 <br>
                 <button type="submit" class="button" name="cadastro">Criar cadastro</button>
