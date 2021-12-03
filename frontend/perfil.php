@@ -52,13 +52,13 @@
             <!-- Modal body -->
             <div class="modal-body">
 
-              <img src="../img/fotouser.jpeg" class="img-fluid" alt="Imagem do Usuário">
+              <img src="<?php echo $info_user[7];  ?>" class="img-fluid" alt="Imagem do Usuário">
 
               <div class="form-floating">
                 <form action="../backend/alterar.php" name="alter" method="POST" enctype="multipart/form-data">
                   <label for="myfile">Alterar foto de perfil:</label>
                   <br><br>
-                  <input type="file" id="myfile" name="myfile">
+                  <input type="file" id="myfile" name="imagem_alt">
               </div>
 
               <div class="form-floating">
@@ -92,6 +92,11 @@
           </div>
         </div>
       </div>
+      <h4>
+      <?php if(isset($_GET['erro_img'])){ 
+        echo 'O aquivo que voce inseriu é invalido';}   
+      ?>
+      </h4>
 
 
       <!-- Itens Salvos -->
