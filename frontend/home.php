@@ -28,9 +28,9 @@
         </div>
 
         <div class="col">
-          <div class="inser card-body">
+
           <?php include_once 'main/iHome.php'; ?>
-          </div>
+
         </div>
 
         </div>
