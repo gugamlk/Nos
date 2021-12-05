@@ -1,36 +1,55 @@
 
 #logo {
         
-    background-color: white;
+    background-color: none;
     width: 70px;
+    margin: none;
+    border: none;
 }
 
 .navbar {
     background-color: #54b3b3;
     color: #1c3B59;
 }
+
 .myself {
-    margin-top: 5%;
+    margin-top: 10%;
     padding-left: 5px;
     padding-right: 5px;
-}
-.svg{
-    background-color: none;
+    font-weight: bold;
+    font-size: xx-large;
     color: #1c3B59;
-    position: relative;
-    margin-top: 50%;  
-    padding-left: 10px; 
-    padding-right: 10px;    
+    font-family: "Palatino", "URW Palladio L", serif
+
 }
 .svg1 {
     background-color: none;
     color: #1c3B59;
     position: relative;
-    margin-top: 37%;  
+    margin-top: 30%;  
+    padding-left: 10px; 
+    padding-right: 10px;    
+}
+.svg2 {
+    background-color: none;
+    color: #1c3B59;
+    position: relative;
+    margin-top: 40%;  
     padding-left: 10px; 
     padding-right: 10px;  
 }
+.svg3 {
+    background-color: none;
+    color: #1c3B59;
+    position: relative;
+    margin-top: 45%;  
+    padding-left: 10px; 
+    padding-right: 10px;  
+}
+
 svg:hover{
-    color: #b4dadacb;
+    color: #d6ebeb;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
 }
     

@@ -5,21 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/iHome.css" rel="stylesheet">
     <title>Card Inserir</title>
 </head>
-<style>
-container-fluid{
-    width: 500px;
-}
-#inserir{
-    margin-top: 150px;
-    left: 800px;
-    position: absolute;
-}
-</style>
+
 <body>
-    <div class="container-fluid">
-        <div class="card" id="inserir">
+
+        <div class="inser card" id="inserir">
             <div class="card-header">
                 Inserir Novo Conteudo:
             </div>
@@ -41,7 +33,7 @@ container-fluid{
                 </form>
             </div>
         </div>
-    </div>
+
 </body>
 
 </html>

@@ -16,10 +16,11 @@
             <!-- Links -->
             <ul class="navbar-nav">
                 <a href="../frontend/home.php" class="navbar-brand">
-                    <img src="../img/logo_temp.png" alt="logotemp" id="logo">
+                    <img src="../img/logo.png" alt="logo" id="logo">
                 </a>
-                <h2 class="myself"> Myself</h2>
-
+                <a href="../frontend/home.php" class="navbar-brand">
+                <p class="myself"> Myself</p>
+</a>
 
                 
                 <li class="nav-item"  title="Perfil"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover">
@@ -33,9 +34,9 @@
                     </script>
                     </a>
                 </li>
-                <li class="nav-item" title="Bulas"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover">
+                    <li class="nav-item" title="Bulas"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover">
                     <a class="nav-link" href="../frontend/bulas.php">
-                    <i class="svg fas fa-file-medical fa-2x"></i>
+                    <i class="svg2 fas fa-file-medical fa-2x"></i>
                     <script>
                     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
                     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
@@ -47,7 +48,7 @@
 
                 <li class="nav-item" title="Sair"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover">
                     <a href="../app/index.php?sair">
-                    <i class="svg fa-solid fa-door-open fa-2x"></i>
+                    <i class="svg3 fa-solid fa-door-open fa-2x"></i>
                     <script>
                     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
                     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
