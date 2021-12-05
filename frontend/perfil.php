@@ -26,8 +26,8 @@
     
 ?>
 
-    <div class="card mx-auto">
-    <img class="card-img-top" src="<?php echo $info_user[7];?>" >
+  <div class="card mx-auto">
+    <img class="card-img-top" src="<?php echo $info_user[7]; ?>">
     <div class="card-body">
       <h4 class="nomeu"><?php echo $info_user[1];?></h4>
       <h6 class="nicku"><?php echo $info_user[2];?></h6>
@@ -37,6 +37,13 @@
       <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#myModal">
         Editar
       </button>
+
+      <br><br>
+      <a href="../frontend/home.php">
+        <button type="button" class="button">
+          voltar
+        </button>
+      </a>
 
       <!-- The Modal -->
       <div class="modal" id="myModal">
@@ -93,8 +100,8 @@
         </div>
       </div>
       <h4>
-      <?php if(isset($_GET['erro_img'])){ 
-        echo 'O aquivo que voce inseriu é invalido';}   
+        <?php if(isset($_GET['erro_img'])){ 
+        die('Esse Tipo de Arquivo não é suportado');}   
       ?>
       </h4>
 

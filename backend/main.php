@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -30,14 +32,14 @@
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    #cont {}
 </style>
 
 <body>
 
-        <?php 
+    <?php
+
         include_once '../classes/conexao.php'; 
+    
 
         #----------------------------------------------------------------------------------------
         #Selecionar o Banco de Dados
@@ -45,7 +47,9 @@
         $selecao = "SELECT * FROM postagens"; 
 
         $selecao_feita = mysqli_query($conn, $selecao);
+
     ?>
+
      <style>
     
         .col-sm-4{
@@ -83,6 +87,9 @@
             </div> 
         </div>
         <br><br>
+        <?php 
+            if(isset($_SESSION['']))
+        ?>
         <?php }?>
      </div>
 </body>
