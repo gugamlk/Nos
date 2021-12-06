@@ -1,3 +1,4 @@
+<?php  session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,7 +17,7 @@
 <body class="body">
   <?php 
   
- session_start();
+
   require_once '../classes/conexao.php'; 
   #-----------------------------------------------------------------------
   #Mostrar as informações
@@ -107,13 +108,32 @@
 
 
       <!-- Itens Salvos -->
+      <h4><a href="../"><button></button></a></h4>
+<?php
+    //selecionando as informações 
+    $selecao_listagem = "SELECT * FROM more";
 
+    $selecao = mysqli_query($conn, $selecao_listagem);
 
+    while($postagens = mysqli_fetch_array($selecao)){
+?>
+<div class="row">
+      <div class="col">
+        <?php 
+          echo "Titulo:".$postagens[1]."<br> imagem:".$postagens[3]."<br> conteudo:".$postagens[4]." <br> autor:".$postagens[2]; 
+        ?>
+        </div>
+      </div>
+</div>
+<?php } ?>
 
       <?php }else{?>
       <h3> voce não se encontra logado<a href="../app/index.php">logar</a>;
         <?php }?>
 
 </body>
+<?php 
 
+
+?>
 </html>
