@@ -54,7 +54,7 @@
                         <p><?php echo $conjunto[4]; ?></p>
                         <br><br>
                         <button>
-                        <a href="../frontend/home.php?<?php echo $id_user[0]; ?>">
+                        <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
                         <i class="fa-solid fa-heart"></i>
                                 Salvar
                     </a>
@@ -66,7 +66,33 @@
                 </div>
         <br><br>
         <?php } ?>
+        <?php 
+        //salvamento
+
+        if(isset($_GET['salvar'])){
+            //decalrando o id do post salvo 
+            $id_post = (int)$_GET['salvar'];
+
+            //buscando as informações do post salvo
+            $selecao_este = "SELECT * FROM postagens WHERE idPostagem LIKE $id_post"; 
+
+            $post_salvo = mysqli_query($conn, $selecao_este); 
+
+            $post_save = mysqli_fetch_array($post_salvo);
+            
+            if(isset($_SESSION['salvo'][$id_post])){
+                echo "<script>alert('este post já foi salvo')</script>"; 
+            
+        ?>
+<h3>Posts salvos</h3>
     
+    <?php 
+    }else{
+        $_SESSION['salvo'][$id_post] = $post_save; 
+        echo "<script>alert('post salvo com sucesso')</script>"; 
+    }
+} 
+    ?>
 </body>
 
 </html>
