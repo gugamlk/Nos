@@ -83,6 +83,7 @@
             if(isset($_SESSION['salvo'][$id_post])){
                 echo "<script>alert('este post já foi salvo')</script>"; 
             
+            
         ?>
 <h3>Posts salvos</h3>
     

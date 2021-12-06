@@ -108,7 +108,7 @@
 
 
       <!-- Itens Salvos -->
-      <h4><a href="../"><button></button></a></h4>
+      <h4><a href="../frontend/perfil.php?atu_salvos"><button class="button" type="button"> Atualizar lista de salvos?</button></a></h4>
 <?php
     //selecionando as informações 
     $selecao_listagem = "SELECT * FROM more";
@@ -134,6 +134,14 @@
 </body>
 <?php 
 
+//verificando se o botõ foi precionado
+if(isset($_GET['atu_salvos'])){
 
-?>
+  //verificando se o ousuário adiconou novas postagens ao seu salvos
+  if(isset($_SESSION['salvos'])){
+    
+  }
+
+}
+ ?>
 </html>
