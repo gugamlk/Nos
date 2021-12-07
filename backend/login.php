@@ -1,9 +1,8 @@
 <?php
 include_once '../classes/conexao.php';
-
+session_start();
 if (isset($_POST['entrar'])) {
-    session_start();
-
+    
     $login_user = array($_POST['email_user'], $_POST['senha_user']);
 
 

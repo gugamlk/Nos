@@ -79,17 +79,24 @@
             $post_salvo = mysqli_query($conn, $selecao_este); 
 
             $post_save = mysqli_fetch_array($post_salvo);
+
+            $salvo = array('id' => $post_save[0], 'titulo' =>$post_save[1], 'autor' => $post_save['2'], 'imagem' => $post_save[3],
+            'conteudo' => $post_save[4], 'cod' => $id_user[0]); 
+
+            //salvando   
             
             if(isset($_SESSION['salvo'][$id_post])){
                 echo "<script>alert('este post já foi salvo')</script>"; 
-            
-            
+
+        
         ?>
 <h3>Posts salvos</h3>
-    
+ <pre>
+     <?php print_r($_SESSION['salvo']); ?>     
+</pre>
     <?php 
     }else{
-        $_SESSION['salvo'][$id_post] = $post_save; 
+        $_SESSION['salvo'][$id_post] = $salvo;  
         echo "<script>alert('post salvo com sucesso')</script>"; 
     }
 } 
