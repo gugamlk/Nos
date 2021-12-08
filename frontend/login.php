@@ -32,7 +32,7 @@
             <br>
         <input type="email" class="iemail" name="email_user" required>
         </label>
-        
+        <br>
         <label>Insira Sua Senha:
             <br>
         <input type="password" class="ipassword" name="senha_user" required>

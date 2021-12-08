@@ -1,5 +1,5 @@
 
-#logo {
+.logo {
         
     background-color: none;
     width: 70px;
@@ -10,6 +10,12 @@
 .navbar {
     background-color: #54b3b3;
     color: #1c3B59;
+}
+
+.nav-item {
+    align-items: right;
+    justify-content: end;
+    
 }
 
 .myself {

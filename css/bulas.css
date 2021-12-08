@@ -9,7 +9,7 @@
     color: #1c3B59 ;
 }
 
-.card{
+.ia{
     background-color: #d6ebeb !important;
     height: 500px;
     width: 350px;
@@ -18,9 +18,19 @@
     margin-top: 20px;
     margin-bottom: 15px;
     padding: 10px;
-    
-
 }
+
+.alo {
+    background-color: #d6ebeb !important;
+    height: 315px !important;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
 .remedionome {
     font-family: Verdana, sans-serif;
     font-weight: bold;
@@ -44,7 +54,7 @@
     padding: 10px 15px;
     border: none;
     width: 328px;
-    bottom: 5%;
+    bottom: 3%;
     position: absolute;
     
     

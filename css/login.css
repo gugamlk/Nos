@@ -13,7 +13,6 @@
 
 .logar {
     background-color: #54b3b3;
-    width: 31.5%;
     border-radius: 10px;
     position: absolute;
     top: 50%;
@@ -22,7 +21,7 @@
     font-family: Tahoma, sans-serif;
     font-weight: bold;
     padding: 10px;
-    display:block;
+    width: fit-content;
 }
 .titulo {
     font-family: Verdana, sans-serif;

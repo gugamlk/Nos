@@ -25,7 +25,7 @@
  <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="ia card">
 
       <img class="img card-img-top" src="../img/alprazolam.jpg" alt="Imagem do remédio">
 
@@ -42,7 +42,7 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="ia card">
 
       <img class="img card-img-top" src="../img/citalopram.jpg" alt="Imagem do remédio">
 
@@ -58,7 +58,7 @@
 </div>
 
     <div class="col">
-      <div class="card">
+      <div class="ia card">
 
       <img class="img card-img-top" src="../img/escitalopram.jpg" alt="Imagem do remédio">
 
@@ -79,7 +79,7 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="ia card">
 
       <img class="img card-img-top" src="../img/fluoxetina.jpg" alt="Imagem do remédio">
 
@@ -95,7 +95,7 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="ia card">
 
       <img class="img card-img-top" src="../img/mirtazapina.jpeg" alt="Imagem do remédio">
 
@@ -112,14 +112,14 @@
 </div>
 
     <div class="col">
-      <div class="card">
+      <div class="ia card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/quetiapina.jpg" alt="Imagem do remédio">
 
-      <p class="remedionome card-text">O ultimo</p>
-      <p class="remedioresumo card-text">analise</p>  
+      <p class="remedionome card-text">Quetiapina</p>
+      <p class="remedioresumo card-text">Trata transtornos bipolares e a esquizofrenia. Também é utilizado para tratar insônia, ansiedade e como potencializador de antidepressivos. Os efeitos colaterais mais comuns são: boca seca; ganho de peso; má digestão; sonolência; tontura; náusea; aumento do apetite, entre outros.</p>  
 
-      <a href="../img/bula1.pdf" download>
+      <a href="../img/quetiapinabula.pdf" download>
       <button class="button">
       PDF da Bula
       </button>
@@ -151,13 +151,12 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/citalopram.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Agomelatina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/agomelatinabula.pdf" download> 
       <button class="button">
       PDF da Bula
@@ -167,13 +166,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/bupropiona.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Bupropiona</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/bupropionabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -184,13 +182,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/buspirona.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Buspirona</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/buspironabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -204,13 +201,12 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/duloxetina.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Duloxetina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/duloxetinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -221,13 +217,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/hidroxizinabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Hidroxizina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/hidroxizinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -238,13 +233,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/imipramiabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Imipramina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/imipraminabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -257,14 +251,13 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/ludiomilbula.jpg" alt="Imagem do remédio">
 
-      <p class="remedionome card-text">Maprotilina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
-      <a href="../img/maprotilinabula.pdf" download>
+      <p class="remedionome card-text">Ludiomil</p>
+      
+      <a href="../img/ludiomil.pdf" download>
       <button class="button">
       PDF da Bula
       </button>
@@ -274,13 +267,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
       <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Ocinaplon</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/ocinaplonbulabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -291,13 +283,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/opripramolbula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Opipramol</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/opipramolbula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -310,13 +301,12 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/paroxetinabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Paroxetina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/paroxetinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -327,13 +317,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/pregabalinabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Pregabalina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+     
       <a href="../img/pregabalinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -344,13 +333,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/quetiapina.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Quetiapina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/quetiapinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -363,13 +351,12 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/sertralinabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Sertralina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/sertralinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -380,14 +367,13 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/gabitrilbula.jpg" alt="Imagem do remédio">
 
-      <p class="remedionome card-text">Tiagabina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
-      <a href="../img/tiagabinabula.pdf" download>
+      <p class="remedionome card-text">Gabitril</p>
+      
+      <a href="../img/gabitril.pdf" download>
       <button class="button">
       PDF da Bula
       </button>
@@ -397,13 +383,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/venlafaxinabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Venlafaxina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/venlafaxinabula.pdf" download>
       <button class="button">
       PDF da Bula
@@ -416,14 +401,13 @@
 <div class="row">
 
    <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/viibrydbula.jpg" alt="Imagem do remédio">
 
-      <p class="remedionome card-text">Vilazodona</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
-      <a href="../img/vilazodonabula.pdf" download>
+      <p class="remedionome card-text">Viibryd</p>
+    
+      <a href="../img/Viibryd.pdf" download>
       <button class="button">
       PDF da Bula
       </button>
@@ -433,13 +417,12 @@
     </div>
 
     <div class="col">
-      <div class="card">
+      <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/vortioxetinabula.jpg" alt="Imagem do remédio">
 
       <p class="remedionome card-text">Vortioxetina</p>
-      <p class="remedioresumo card-text">Utilizado para tratar depressão, ansiedade, bulimia, TOC, sindrome do pânico, transtornos menstruais e disforia. Age em 6 ou 8 horas, mas para sentir efeitos terapêuticos evidentes é necessário a passagem do período de 2~6 semanas</p>  
-
+      
       <a href="../img/vortioxetinabula.pdf" download>
       <button class="button">
       PDF da Bula

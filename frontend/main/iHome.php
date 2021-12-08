@@ -21,7 +21,7 @@
 
                 <label> Insira o titulo de sua publicação:
             <br>
-            <input type="text" class="titulo" name="titulo">
+            <input type="text" class="titulo" name="titulo" >
             </label>
             <br>
             <br>

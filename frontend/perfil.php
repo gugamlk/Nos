@@ -15,6 +15,9 @@
 </head>
 
 <body class="body">
+<div class="card-body">
+  <?php include_once 'main/cHome.php'?>
+</div>
   <?php
 
 
@@ -26,28 +29,30 @@
     $info_user = $_SESSION['info_logado'];
 
   ?>
-
-    <div class="card mx-auto">
-      <img class="card-img-top" src="<?php echo $info_user[7]; ?>">
+  <div class="perf row">
+    <div class="foto col">
+    <img class="imp" src="<?php echo $info_user[7]; ?>">
+    </div>
+    <div class="info col">
       <div class="card-body">
-        <h4 class="nomeu"><?php echo $info_user[1]; ?></h4>
-        <h6 class="nicku"><?php echo $info_user[2]; ?></h6>
-        <h6 class="emailu"><?php echo $info_user[3]; ?></h6>
-
-
+      <h4 class="nomeu"><?php echo $info_user[1]; ?></p>
+        <p class="nicku"><?php echo $info_user[2]; ?></p>
+        <p class="emailu"><?php echo $info_user[3]; ?></p>
         <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#myModal">
           Editar
         </button>
+      </div>
+    </div>
+  </div>
 
-        <br><br>
-        <a href="../frontend/home.php">
-          <button type="button" class="button">
-            voltar
-          </button>
-        </a>
 
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
+       
+
+
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
 
@@ -106,6 +111,7 @@
           }
           ?>
         </h4>
+
 
 
         <!-- Itens Salvos -->

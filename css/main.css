@@ -1,8 +1,10 @@
 .post {
     position: absolute;
-    width: 650px;
+    width: 800px;
     left: -3%;
     background-color: #d6ebeb !important;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 p {
     text-align: justify;
@@ -15,26 +17,49 @@ p {
     font-family: Tahoma, sans-serif;
     font-size: medium;
     background-color: #54b3b3 !important;
+    color: #1c3B59;
 
+}
+.card-body {
+    align-items: center;
+}
+.pub {
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
+    background-color: #b4dadacb !important;
+    color: #1c3B59;
 }
 img {
-    width: auto;
-    max-height: 400px;
+    width: 300px;
+    max-height: 200px;
+    align-items: center;
+    border: 1px solid #1c3B59;
+    border-style: ridge;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: none;
 }
-svg {
-background-color: none;
-color: #eb345e;
+.content {
+    text-align: left;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
 }
-svg:hover {
-color: #1c3B59;
 
-}
-button {
+.button {
     background-color: #89c0c2; 
     border: none; 
-    color: #1c3B59; 
-    padding: 12px 16px;
-    font-size: 16px; 
-    cursor: pointer;
-    border-radius: 6px;
+    color: #1c3B59;
+    border-radius: 8px;
+    font-size: medium;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
 }
+.button:hover {
+    background-color: #1c3B59;
+    color: #89c0c2;
+}
+
