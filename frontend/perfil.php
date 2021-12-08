@@ -29,6 +29,7 @@
     $info_user = $_SESSION['info_logado'];
 
   ?>
+<<<<<<< HEAD
   <div class="perf row">
     <div class="foto col">
     <img class="imp" src="<?php echo $info_user[7]; ?>">
@@ -38,18 +39,28 @@
       <h4 class="nomeu"><?php echo $info_user[1]; ?></p>
         <p class="nicku"><?php echo $info_user[2]; ?></p>
         <p class="emailu"><?php echo $info_user[3]; ?></p>
-        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#myModal">
-          Editar
+        <?php if($info_user[5] == 1){?>
+      <a href="../frontend/admin.php">
+
+        <button type="button" class="button">
+           Admin
         </button>
-      </div>
-    </div>
-  </div>
+
+      </a>
+      <br><br>
+      <?php } ?>
 
 
-       
+      <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#myModal">
+        Editar
+      </button>
 
-
-
+      <br><br>
+      <a href="../frontend/home.php">
+        <button type="button" class="button">
+          voltar
+        </button>
+      </a>
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
@@ -62,61 +73,57 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
 
-              <!-- Modal body -->
-              <div class="modal-body">
-
-                <img src="<?php echo $info_user[7];  ?>" class="img-fluid" alt="Imagem do Usuário">
-
-                <div class="form-floating">
-                  <form action="../backend/alterar.php" name="alter" method="POST" enctype="multipart/form-data">
-                    <label for="myfile">Alterar foto de perfil:</label>
-                    <br><br>
-                    <input type="file" id="myfile" name="imagem_alt">
-                </div>
-
-                <div class="form-floating">
-                  <input type="text" name="nome_alt" value="<?php echo $info_user[1]; ?>" class="form-control">
-                  <label for="floatingText">Nome</label>
-                </div>
-
-                <div class="form-floating">
-                  <input type="text" name="nick_alt" value="<?php echo $info_user[2]; ?>" class="form-control">
-                  <label for="floatingText">Nickname</label>
-                </div>
-
-                <div class="form-floating">
-                  <input type="email" class="form-control" name="email_alt" value="<?php echo $info_user[3]; ?>">
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating">
-                  <input type="text" class="form-control" name="senha_alt" value="<?php echo $info_user[4]; ?>">
-                  <label for="floatingPassword">Password</label>
-                </div>
-
+              <div class="form-floating">
+                <form action="../backend/alterar.php" name="alter" method="POST" enctype="multipart/form-data">
+                  <label for="myfile">Alterar foto de perfil:</label>
+                  <br><br>
+                  <input type="file" id="myfile" name="imagem_alt">
               </div>
 
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <input type="submit" class="buttona" name="alterar" data-bs-dismiss="modal" value="Salvar Alterações">
-                <button type="reset" class="buttonb" data-bs-dismiss="modal">Cancelar Alterações</button>
-                </form>
+              <div class="form-floating">
+                <input type="text" name="nome_alt" value="<?php echo $info_user[1]; ?>" class="form-control">
+                <label for="floatingText">Nome</label>
               </div>
+
+              <div class="form-floating">
+                <input type="text" name="nick_alt" value="<?php echo $info_user[2]; ?>" class="form-control">
+                <label for="floatingText">Nickname</label>
+              </div>
+
+              <div class="form-floating">
+                <input type="email" class="form-control" name="email_alt" value="<?php echo $info_user[3]; ?>">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" name="senha_alt" value="<?php echo $info_user[4]; ?>">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+            </div>
+
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <input type="submit" class="buttona" name="alterar" data-bs-dismiss="modal" value="Salvar Alterações">
+              <button type="reset" class="buttonb" data-bs-dismiss="modal">Cancelar Alterações</button>
+              </form>
             </div>
           </div>
         </div>
-        <h4>
-          <?php if (isset($_GET['erro_img'])) {
+      </div>
+      <h4>
+        <?php if (isset($_GET['erro_img'])) {
             die('Esse Tipo de Arquivo não é suportado');
           }
           ?>
-        </h4>
+      </h4>
 
 
 
-        <!-- Itens Salvos -->
+      <!-- Itens Salvos -->
 
-        <?php
+
+      <?php
         if (isset($_SESSION['salvo'])) {
           //---------------------------------------------------------------------------------------------------------  
           //verificando se o ousuário adiconou novas postagens ao seu salvos
@@ -155,10 +162,10 @@
         }
       }
 ?>
-        
-  <?php } else { ?>
-    <h3> voce não se encontra logado<a href="../app/index.php">logar</a>;
-    <?php } ?>
+
+      <?php } else { ?>
+      <h3> voce não se encontra logado<a href="../app/index.php">logar</a>;
+        <?php } ?>
 
 </body>
 
