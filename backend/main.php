@@ -48,20 +48,34 @@
             <div class="card-header">
             <?php echo $conjunto[1] ?>
             </div>
-        <div class="card-body">
-            <p class=content><?php echo $conjunto[4]; ?></p>
-            <img class="postimg" src="<?php echo $conjunto[3]; ?>" alt="não foi">
 
-            <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
-            <button class="button">
-            Salvar
-            </button>
-            </a>
-        </div>
-                    <div class="pub card-footer">
-                        Publicado por: <?php echo $conjunto[2]; ?>
+            <div class="card-body">
+
+                <div class="row">
+
+                    <div class="postimg col">
+                    <img class="imgpost" src="<?php echo $conjunto[3]; ?>" alt="não foi">
                     </div>
+
+                    <div class="conteud col">
+                    <p class="cont"><?php echo $conjunto[4]; ?></p>
+                    </div>
+
                 </div>
+
+                <div class="botao">
+                    <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
+                    <button class="button">
+                    Salvar
+                    </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pub card-footer">
+                Publicado por: <?php echo $conjunto[2]; ?>
+            </div>
+        </div>
         
         <?php } ?>
         <?php 
@@ -84,7 +98,7 @@
             //salvando   
             
             if(isset($_SESSION['salvo'][$id_post])){
-                echo "<script>alert('este post já foi salvo')</script>"; 
+                echo "<script>alert('Esta publicação já está salva.')</script>"; 
 
         
         ?>
@@ -95,7 +109,7 @@
     <?php 
     }else{
         $_SESSION['salvo'][$id_post] = $salvo;  
-        echo "<script>alert('post salvo com sucesso')</script>"; 
+        echo "<script>alert('Post salvo com sucesso!')</script>"; 
     }
 } 
     ?>

@@ -1,15 +1,10 @@
 .post {
     position: absolute;
-    width: 800px;
+    width: 65%;
     left: -3%;
     background-color: #d6ebeb !important;
     margin-bottom: 40px;
     margin-top: 20px;
-}
-p {
-    text-align: justify;
-    font-family: Tahoma, sans-serif;
-    font-size: medium;
 }
 .card-header {
     text-align: center;
@@ -31,22 +26,45 @@ p {
     background-color: #b4dadacb !important;
     color: #1c3B59;
 }
-img {
-    width: 300px;
-    max-height: 200px;
-    align-items: center;
-    border: 1px solid #1c3B59;
-    border-style: ridge;
-    border-radius: 5px;
+
+    
+.postimg {
     padding: 5px;
-    background-color: none;
+    width: 50%;
+    margin-left: 10px;
 }
-.content {
-    text-align: left;
+
+.conteud {
+    top: 25%;
+    left: 35%;
+    position: absolute;
+}
+.cont {
+    max-width: 60%;
+    background-color: none;
+    text-align: justify;
     font-family: Tahoma, sans-serif;
     font-size: medium;
 }
 
+
+
+
+
+.imgpost {
+    max-width: 200px;
+    max-height: 300px;
+
+    border: 1px solid #1c3B59;
+    border-style: ridge;
+    border-radius: 8px;
+}
+
+.botao {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
 .button {
     background-color: #89c0c2; 
     border: none; 
@@ -55,7 +73,6 @@ img {
     font-size: medium;
     font-family: Tahoma,sans-serif;
     padding: 10px 15px;
-    border: none;
     margin-top: 15px;
 }
 .button:hover {
