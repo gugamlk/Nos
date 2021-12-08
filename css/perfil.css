@@ -1,17 +1,48 @@
+
+
 .body {
-    background-color: #b4dadacb;
+    background-color: #b4dada;
 }
-.card {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    outline: none;
+.perf {
+padding-top: 2%;
+    border-radius: 10px;
+    padding-left: 30%;
+    padding-right: 30%;    
+
 }
-.card-body {
+
+.foto {
     background-color: #54b3b3;
-    font-size: medium;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  padding: 10px;
+
+
+
 }
+
+.imp {
+    height: 280px;
+    width: 300px;
+    border-radius: 8px;
+}
+.info {
+    background-color: #54b3b3;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
 .nomeu   {
     font-family: Verdana, sans-serif;
     color:#1c3B59;
@@ -25,11 +56,62 @@
     color: #1c3B59;
 }
 
+.button {
+    background-color: #89c0c2; 
+    border: none; 
+    color: #1c3B59;
+    border-radius: 8px;
+    font-size: large;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 18%;
+    width: 250px;
+
+}
+.button:hover {
+    background-color: #1c3B59;
+    color: #89c0c2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modal-header {
     background-color: #54b3b3 ;
    
 }
-
 .perfe {
     font-family: Verdana, sans-serif;
     font-weight: bold
@@ -51,15 +133,8 @@
 .modal-footer {
     background-color: #54b3b3 ;
 }
-.button {
-    background-color: #b4dadacb;
-    border-radius: 8px;
-    color: #1c3B59;
-    font-size: medium;
-    font-family: Tahoma,sans-serif;
-    padding: 10px 15px;
-    border: none;
-}
+
+
 
 .buttona {
     background-color: #47f17a;
@@ -70,6 +145,11 @@
     padding: 10px 15px;
     border: none; 
 }
+.buttona:hover {
+    background-color: #1b582e;
+    color: #47f17a;
+}
+
  .buttonb {
 
     background-color: #f14747;
@@ -80,3 +160,8 @@
     padding: 10px 15px;
     border: none; 
  }
+
+ .buttonb:hover {
+    background-color: #58271b;
+    color: #f14747;
+}

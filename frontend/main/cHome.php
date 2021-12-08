@@ -16,11 +16,11 @@
             <!-- Links -->
             <ul class="navbar-nav">
                 <a href="../frontend/home.php" class="navbar-brand">
-                    <img src="../img/logo.png" alt="logo" id="logo">
+                    <img src="../img/logo.png" class="logo" alt="logo" id="logo">
                 </a>
                 <a href="../frontend/home.php" class="navbar-brand">
                 <p class="myself"> Myself</p>
-</a>
+                </a>
 
                 
                 <li class="nav-item"  title="Perfil"  data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover">

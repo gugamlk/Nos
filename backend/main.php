@@ -44,27 +44,25 @@
 
         ?>
 
-                <div class="post card">
-                    <div class="card-header">
-                        Publicado Por: <?php echo $conjunto[2]; ?>
+        <div class="post card">
+            <div class="card-header">
+            <?php echo $conjunto[1] ?>
+            </div>
+        <div class="card-body">
+            <p class=content><?php echo $conjunto[4]; ?></p>
+            <img class="postimg" src="<?php echo $conjunto[3]; ?>" alt="não foi">
+
+            <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
+            <button class="button">
+            Salvar
+            </button>
+            </a>
+        </div>
+                    <div class="pub card-footer">
+                        Publicado por: <?php echo $conjunto[2]; ?>
                     </div>
-                    <div class="card-body">
-                        <img src="<?php echo $conjunto[3]; ?>" alt="não foi">
-                        <br><br>
-                        <p><?php echo $conjunto[4]; ?></p>
-                        <br><br>
-                        <button>
-                        <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
-                        <i class="fa-solid fa-heart"></i>
-                                Salvar
-                    </a>
-                        </button>
-                        </a>
-                        <br><br>
-                    </div>
-                    
                 </div>
-        <br><br>
+        
         <?php } ?>
         <?php 
         //salvamento
@@ -103,4 +101,4 @@
     ?>
 </body>
 
-</html>
+</html

@@ -17,7 +17,7 @@ label {
 .box {
     background-color: #54b3b3;
     align-items: center;
-    width: 32%;
+    width: fit-content;
     border-radius: 10px;
     position: absolute;
     top: 50%;

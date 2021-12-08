@@ -1,9 +1,11 @@
 .inser {
-    position: absolute;
+    position: relative;
     width: 400px;
-    right: 3%;
+    right: 8%;
     top: 30%;
-    background-color: #d6ebeb
+    background-color: #d6ebeb;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
 }
 .titulo {
 padding: 5px;
@@ -13,10 +15,7 @@ margin: auto;
 border-radius: 6px;
 background-color: #b4dadacb;
 }
-.inser {
-    font-family: Tahoma, sans-serif;
-    font-size: medium;
-}
+
 .card-header {
     text-align: center;
     font-weight: bold;
