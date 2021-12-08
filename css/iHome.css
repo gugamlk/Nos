@@ -1,20 +1,13 @@
 .inser {
-    position: relative;
-    width: 400px;
-    right: 8%;
-    top: 30%;
+    position: fixed;
+    width: 30%;
+    right: 4%;
+    top: 20%;
     background-color: #d6ebeb;
     font-family: Tahoma, sans-serif;
     font-size: medium;
 }
-.titulo {
-padding: 5px;
-width: 370px;
-border: 1px solid #89c0c2;
-margin: auto;
-border-radius: 6px;
-background-color: #b4dadacb;
-}
+
 
 .card-header {
     text-align: center;
@@ -25,17 +18,31 @@ background-color: #b4dadacb;
     color: #1c3B59;
 }
 
-.conteudo {
-    padding-left: auto;
-    padding-right: auto;
+
+input {
+    padding: 5px;
     border: 1px solid #89c0c2;
-    width: 370px;
-    height: 100px;
-    margin: auto;
+    width: 100%;
     border-radius: 6px;
     background-color: #b4dadacb;
     font-family: Tahoma, sans-serif;
     font-size: medium;
+    border-radius: 6px;
+    background-color: #b4dadacb;
+}
+
+.conteudo {
+    padding: 5px;
+    border: 1px solid #89c0c2;
+    height: 80%;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #b4dadacb;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
+    border-radius: 6px;
+    background-color: #b4dadacb;
+    max-height: 120%;
 }
 
 .button {
@@ -47,6 +54,7 @@ background-color: #b4dadacb;
     font-family: Tahoma,sans-serif;
     padding: 10px 15px;
     border: none;
+    margin-top: 10px;
 
 }
 .button:hover {

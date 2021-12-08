@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     include_once '../classes/conexao.php'; 
 ?>
 <!DOCTYPE html>
@@ -8,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/listar.css" rel="stylesheet">
     <title>Listar</title>
 </head>
 <?php 
@@ -25,16 +25,38 @@
     while($mostrar = mysqli_fetch_array($guardar)){ 
 
 ?>
-<div class="row">
-    <div class="col">
-        <?php echo "Titulo:".$mostrar[1]."<br><br> Imagem:".$mostrar[3]."<br><br> conteudo:".$mostrar[4].
-        "<br><br> Autor:". $mostrar[2]."<br><br><br>"; ?>
+
+
+<div class="aa">
+        <div class="cima card-header">
+            <?php echo $mostrar[1] ?>
+        </div>
+
+        <div class="meio card-body">
+
+            <div class="row">
+
+                <div class="salvimg col">
+                    <img class="imgsalv" src="<?php echo $mostrar[3]; ?>" alt="não foi">
+                </div>
+
+                <div class="conteud col " maxlength="221">
+                    <p class="cont"><?php echo $mostrar[4]; ?></p>
+                </div>
+
+            </div>
+
+        </div>
+            
+        <div class="baixo card-footer">
+            Publicado por: <?php echo $mostrar[2]; ?>
+        </div>
     </div>
-</div>
+
+    
 
 
-
-<?php }?>
+    <?php }?>
 <body>
     
 </body>

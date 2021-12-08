@@ -1,14 +1,5 @@
-.post {
-    position: absolute;
-    width: 65%;
-    height: 7%;
-    max-height: 15%;
-    left: -3%;
-    background-color: #d6ebeb !important;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-.card-header {
+
+.cima {
     text-align: center;
     font-weight: bold;
     font-family: Tahoma, sans-serif;
@@ -16,27 +7,25 @@
     background-color: #54b3b3 !important;
     color: #1c3B59;
 
+
 }
-.card-body {
-    align-items: center;
-}
-.pub {
+.baixo {
     text-align: center;
     font-weight: bold;
     font-family: Tahoma, sans-serif;
     font-size: medium;
     background-color: #b4dadacb !important;
     color: #1c3B59;
+    margin-bottom: 40px;
 }
 
     
-.postimg {
-
+.salvimg {
+    height: 180px;
     width: 50%;
     margin-left: 10px;
-    height: 180px;
 }
-.imgpost {
+.imgsalv {
     
     border: 1px solid #1c3B59;
     border-style: ridge;
@@ -47,18 +36,23 @@
     width: 200px;
 }
 
-
 .conteud {
     left: 35%;
     position: absolute;
     padding-top: 5%;
+    max-width: 60%;
+   
 }
 .cont {
-    max-width: 60%;
+    max-width: 100%;
     background-color: none;
     text-align: justify;
     font-family: Tahoma, sans-serif;
     font-size: medium;
+    word-wrap: break-word;
+}
+.aa{
+    height: 15%;
 }
 
 
@@ -66,23 +60,4 @@
 
 
 
-.aaa {
-right: 8%;
-position: absolute;
-bottom: 20%;
-}
-
-.botao {
-    background-color: #89c0c2; 
-    border: none; 
-    color: #1c3B59;
-    border-radius: 8px;
-    font-size: medium;
-    font-family: Tahoma,sans-serif;
-    padding: 10px 15px;
-}
-.botao:hover {
-    background-color: #1c3B59;
-    color: #89c0c2;
-}
 

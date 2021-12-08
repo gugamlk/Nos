@@ -266,14 +266,14 @@
       </div>
     </div>
 
-    <div class="col">
+     <div class="col">
       <div class="alo card">
 
-      <img class="img card-img-top" src="../img/testebulas.jpg" alt="Imagem do remédio">
+      <img class="img card-img-top" src="../img/vortioxetinabula.jpg" alt="Imagem do remédio">
 
-      <p class="remedionome card-text">Ocinaplon</p>
+      <p class="remedionome card-text">Vortioxetina</p>
       
-      <a href="../img/ocinaplonbulabula.pdf" download>
+      <a href="../img/vortioxetinabula.pdf" download>
       <button class="button">
       PDF da Bula
       </button>
@@ -416,21 +416,7 @@
       </div>
     </div>
 
-    <div class="col">
-      <div class="alo card">
-
-      <img class="img card-img-top" src="../img/vortioxetinabula.jpg" alt="Imagem do remédio">
-
-      <p class="remedionome card-text">Vortioxetina</p>
-      
-      <a href="../img/vortioxetinabula.pdf" download>
-      <button class="button">
-      PDF da Bula
-      </button>
-      </a>
-
-      </div>
-    </div>
+   
 
 </div>
 </body>

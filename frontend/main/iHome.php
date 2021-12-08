@@ -19,23 +19,21 @@
                 <form action="../backend/inserir.php" method="post" enctype="multipart/form-data">
 
 
-                <label> Insira o titulo de sua publicação:
+            Insira o titulo de sua publicação:
             <br>
-            <input type="text" class="titulo" name="titulo" >
-            </label>
+            <input type="text" class="titulo" name="titulo">
+            
             <br>
             <br>
-            <label> Adicione uma imagem para sua publicação:
+            Adicione uma imagem para sua publicação:
             <br>
             <input type="file" class="imagem" name="imagem">
-            </label>
             <br>
             <br>
-            <label> Escreva o conteúdo de sua publicação:
+            Escreva o conteúdo de sua publicação:
             <br>
-            <textarea type="text" class="conteudo" name="conteudo">
-            </textarea>
-            </label>
+            <textarea rows="5" cols="200" maxlength="221" type="text" class="conteudo" name="conteudo"></textarea>
+            
             <br>
             <input class="button" type="submit" name="inserir">
                 
