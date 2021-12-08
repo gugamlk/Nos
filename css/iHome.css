@@ -1,0 +1,55 @@
+.inser {
+    position: relative;
+    width: 400px;
+    right: 8%;
+    top: 30%;
+    background-color: #d6ebeb;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
+}
+.titulo {
+padding: 5px;
+width: 370px;
+border: 1px solid #89c0c2;
+margin: auto;
+border-radius: 6px;
+background-color: #b4dadacb;
+}
+
+.card-header {
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
+    background-color: #54b3b3 !important;
+    color: #1c3B59;
+}
+
+.conteudo {
+    padding-left: auto;
+    padding-right: auto;
+    border: 1px solid #89c0c2;
+    width: 370px;
+    height: 100px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #b4dadacb;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.button {
+    background-color: #89c0c2; 
+    border: none; 
+    color: #1c3B59;
+    border-radius: 8px;
+    font-size: medium;
+    font-family: Tahoma,sans-serif;
+    padding: 10px 15px;
+    border: none;
+
+}
+.button:hover {
+    background-color: #1c3B59;
+    color: #89c0c2;
+}

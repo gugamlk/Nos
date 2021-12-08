@@ -16,39 +16,46 @@
 </head>
 <body class="body">
     <div class="box">
-        <form action="../backend/cadastro.php" method="post">
+        <form action="../backend/cadastro.php" method="post" enctype="multipart/form-data">
             <h4 class="titulo">Cadastro</h4>
             <fieldset>
                 <div class="inputbox">
                     <label for="nome_completo">Insira seu nome completo
-                    
+                    <br>
                     <input type="text" name="nome_user" id="nome_completo" required>
                     </label>
                 </div>
                 <div class="inputbox">
                     <label for="nick_user">Insira seu apelido
-                    
+                    <br>
                     <input type="text" name="nick_user" id="nick_user" required>
                     </label>
                 </div>
                 <div class="inputbox">
                     <label for="email">Insira seu email:
-                  
+                  <br>
                     <input type="email" name="email_user" id="email" required>
                     </label>
                 </div>
                 <div class="inputbox">
                     <label for="senha">Insira sua senha:
-                   
+                   <br>
                     <input type="password" name="senha_user" id="senha" required>
                     </label>
                 </div>
                 <div class="inputbox">
                     <label for="idade">Insira sua data de nascimento:
-                    
+                        <br>
                     <input type="date" name="idade_user" id="idade" required>
                     </label>
                 </div>
+                <div class="inputbox">
+                    <label for="idade">Insira uma imagem para o seu perfil: 
+                        <br>
+                    <input type="file" name="imagem_user" id="idade" required>
+                    </label>
+                </div>
+
                 </fieldset>
                 <br>
                 <button type="submit" class="button" name="cadastro">Criar cadastro</button>

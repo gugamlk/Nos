@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,6 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91353c877b.js" crossorigin="anonymous"></script>
     <!-- Boostrap-->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,77 +18,87 @@
     <title>Main</title>
 </head>
 
-<style>
-    img {
-        width: 200px;
-        border: 2px solid black;
-        margin-left: 22px;
-    }
-
-    h4 {
-        text-align: center;
-    }
-
-    #main {
-        border: 2px solid black;
-        position: absolute;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    #cont {}
-</style>
-
 <body>
 
-        <?php 
-        include_once '../classes/conexao.php'; 
+    <?php
 
-        #----------------------------------------------------------------------------------------
-        #Selecionar o Banco de Dados
+    include_once '../classes/conexao.php';
 
-        $selecao = "SELECT * FROM postagens"; 
 
-        $selecao_feita = mysqli_query($conn, $selecao);
+    #----------------------------------------------------------------------------------------
+    #Selecionar o Banco de Dados
+
+    $selecao = "SELECT * FROM postagens";
+
+    $selecao_feita = mysqli_query($conn, $selecao);
+
     ?>
-     <style>
-    
-        .col-sm-4{
-            position: relative;
-            border: 1px solid black;
-            padding: 12px;
-        }
-        img{
-            width: 250px;
-            margin-left: 70px;
-        }
-        p{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-        }
-     </style>
-     <div class="conatiner container-fluid">
-    <?php while($conjunto = mysqli_fetch_array($selecao_feita)){ ?>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-heard">
-                        <h4><?php echo$conjunto[1];?></h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="<?php echo $conjunto[3]; ?>" alt="não foi">
-                        <br><br>
-                        <p><?php echo $conjunto[4]; ?></p>
-                    </div>
-                    <div class="card-footer text-center">
-                        Publicado Por: <?php echo $conjunto[2]; ?>
+
+
+        <?php while ($conjunto = mysqli_fetch_array($selecao_feita)) {
+
+            #----------------------------------------------------
+            #Sistema de Salvamento (Pegando as Informações do user logado)
+
+            $id_user = $_SESSION['info_logado'];
+
+        ?>
+
+        <div class="post card">
+            <div class="card-header">
+            <?php echo $conjunto[1] ?>
+            </div>
+        <div class="card-body">
+            <p class=content><?php echo $conjunto[4]; ?></p>
+            <img class="postimg" src="<?php echo $conjunto[3]; ?>" alt="não foi">
+
+            <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
+            <button class="button">
+            Salvar
+            </button>
+            </a>
+        </div>
+                    <div class="pub card-footer">
+                        Publicado por: <?php echo $conjunto[2]; ?>
                     </div>
                 </div>
-            </div> 
-        </div>
-        <br><br>
-        <?php }?>
-     </div>
+        
+        <?php } ?>
+        <?php 
+        //salvamento
+
+        if(isset($_GET['salvar'])){
+            //decalrando o id do post salvo 
+            $id_post = (int)$_GET['salvar'];
+
+            //buscando as informações do post salvo
+            $selecao_este = "SELECT * FROM postagens WHERE idPostagem LIKE $id_post"; 
+
+            $post_salvo = mysqli_query($conn, $selecao_este); 
+
+            $post_save = mysqli_fetch_array($post_salvo);
+
+            $salvo = array('id' => $post_save[0], 'titulo' =>$post_save[1], 'autor' => $post_save['2'], 'imagem' => $post_save[3],
+            'conteudo' => $post_save[4], 'cod' => $id_user[0]); 
+
+            //salvando   
+            
+            if(isset($_SESSION['salvo'][$id_post])){
+                echo "<script>alert('este post já foi salvo')</script>"; 
+
+        
+        ?>
+<h3>Posts salvos</h3>
+ <pre>
+     <?php print_r($_SESSION['salvo']); ?>     
+</pre>
+    <?php 
+    }else{
+        $_SESSION['salvo'][$id_post] = $salvo;  
+        echo "<script>alert('post salvo com sucesso')</script>"; 
+    }
+} 
+    ?>
 </body>
 
-</html>
+</html
