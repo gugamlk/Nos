@@ -2,7 +2,8 @@
     position: absolute;
     width: 65%;
     height: 18%;
-    max-height: 15%;
+    max-height: 18% !important;
+    min-height: 18%;
     left: -3%;
     background-color: #d6ebeb !important;
     margin-bottom: 40px;

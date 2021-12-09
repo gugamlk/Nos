@@ -159,6 +159,9 @@
     <h3> voce não se encontra logado<a href="../app/index.php">logar</a>;
     <?php } ?>
 
+    <div class="titulo">
+      Publicações Salvas
+    </div>
 
     <div class="salvos card-body">
       <?php include_once '../backend/listar.php' ?>

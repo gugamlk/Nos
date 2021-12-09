@@ -102,6 +102,8 @@
 
         
         ?>
+
+        
 <h3>Posts salvos</h3>
  <pre>
      <?php print_r($_SESSION['salvo']); ?>     
