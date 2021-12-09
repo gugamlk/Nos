@@ -28,7 +28,7 @@
     #----------------------------------------------------------------------------------------
     #Selecionar o Banco de Dados
 
-    $selecao = "SELECT * FROM postagens";
+    $selecao = "SELECT * FROM postagens ORDER BY idPostagem DESC";
 
     $selecao_feita = mysqli_query($conn, $selecao);
 
