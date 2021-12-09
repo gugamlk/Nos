@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Dez-2021 às 12:31
--- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 8.0.10
+-- Tempo de geração: 09-Dez-2021 às 07:23
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,7 +48,7 @@ CREATE TABLE `postagens` (
   `titulo` tinytext DEFAULT NULL,
   `autor` varchar(20) DEFAULT NULL,
   `imagem_net` tinytext DEFAULT NULL,
-  `conteudo` varchar(100) NOT NULL
+  `conteudo` varchar(221) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -56,8 +56,12 @@ CREATE TABLE `postagens` (
 --
 
 INSERT INTO `postagens` (`idPostagem`, `titulo`, `autor`, `imagem_net`, `conteudo`) VALUES
-(1, '', ' Guga', '../img/', '            \"pode não parecer muito, mas me olhei no espelho hoje e não me senti mal, acho que já é '),
-(2, '', ' Guga', '../img/', '            \"Passei o dia com crise de ansiedade hoje, queria saber se alguém entende melhor disso p');
+(16, 'Publicação 1', 'admin ', '../img/post1.jpg', 'Phasellus tristique, lacus sed ultrices bibendum, tellus diam aliquam libero, fermentum molestie turpis enim ullamcorper leo. Aenean vestibulum faucibus commodo. Sed tristique, lacus tincidunt eleifend efficitur, massa or'),
+(17, 'Publicação 2', 'admin ', '../img/post2.jpg', 'Phasellus tristique, lacus sed ultrices bibendum, tellus diam aliquam libero, fermentum molestie turpis enim ullamcorper leo. Aenean vestibulum faucibus commodo. Sed tristique, lacus tincidunt eleifend efficitur, massa or'),
+(20, 'Publicação 3', ' Guga', '../img/post3.jpg', 'Phasellus tristique, lacus sed ultrices bibendum, tellus diam aliquam libero, fermentum molestie turpis enim ullamcorper leo. Aenean vestibulum faucibus commodo. Sed tristique, lacus tincidunt eleifend efficitur, massa or'),
+(21, 'Publicação 4', 'Louis', '../img/post4.jpg', 'Phasellus tristique, lacus sed ultrices bibendum, tellus diam aliquam libero, fermentum molestie turpis enim ullamcorper leo. Aenean vestibulum faucibus commodo. Sed tristique, lacus tincidunt eleifend efficitur, massa or'),
+(22, 'Publicação 5', 'Louis', '../img/post5.jpg', 'Phasellus tristique, lacus sed ultrices bibendum, tellus diam aliquam libero, fermentum molestie turpis enim ullamcorper leo. Aenean vestibulum faucibus commodo. Sed tristique, lacus tincidunt eleifend efficitur, massa or'),
+(23, 'Publicação 6', 'Louis', '../img/post6.jpg', 'Phasellus tristique, lacus sed ultrices bibendum, tellus diam aliquam libero, fermentum molestie turpis enim ullamcorper leo. Aenean vestibulum faucibus commodo. Sed tristique, lacus tincidunt eleifend efficitur, massa or');
 
 -- --------------------------------------------------------
 
@@ -82,7 +86,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `nome`, `nick`, `email`, `senha`, `tipo`, `idade`, `foto`) VALUES
 (1, 'Gustavo H Santoss ', ' Guga', 'guga@gmail.com', '1234', 0, 2003, '../img/Boletim.PNG'),
-(2, 'Administrador ', 'admin ', 'adm@gmail.com', '1227', 0, 2003, '../img/Boletim.PNG');
+(2, 'Administrador ', 'admin ', 'adm@gmail.com', '1227', 1, 2003, '655cf4ea12db54276513'),
+(3, 'lz', 'Louis', 'morfeu@gmail.com', '123456', 0, 2121, '../img/user2.png');
 
 --
 -- Índices para tabelas despejadas
@@ -114,19 +119,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `more`
 --
 ALTER TABLE `more`
-  MODIFY `salvo` int(60) NOT NULL AUTO_INCREMENT;
+  MODIFY `salvo` int(60) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `postagens`
 --
 ALTER TABLE `postagens`
-  MODIFY `idPostagem` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idPostagem` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

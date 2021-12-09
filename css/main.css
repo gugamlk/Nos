@@ -2,8 +2,7 @@
     position: absolute;
     width: 65%;
     height: 18%;
-    max-height: 18% !important;
-    min-height: 18%;
+    max-height: 18%;
     left: -3%;
     background-color: #d6ebeb !important;
     margin-bottom: 40px;
@@ -33,7 +32,6 @@
     
 .postimg {
 
-    width: 50%;
     margin-left: 10px;
     height: 180px;
 }
@@ -63,15 +61,15 @@
 }
 
 
-
-
-
-
-.aaa {
-right: 8%;
-position: absolute;
-bottom: 20%;
+.alo {
+    text-align: right;
 }
+.lugar {
+    margin-left: 70%;
+}
+
+
+
 
 .botao {
     background-color: #89c0c2; 
