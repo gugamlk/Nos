@@ -35,7 +35,7 @@
     ?>
 
 
-        <?php while ($conjunto = mysqli_fetch_array($selecao_feita)) {
+    <?php while ($conjunto = mysqli_fetch_array($selecao_feita)) {
 
             #----------------------------------------------------
             #Sistema de Salvamento (Pegando as Informações do user logado)
@@ -44,41 +44,66 @@
 
         ?>
 
-        <div class="post card">
-            <div class="card-header">
+    <div class="post card">
+        <div class="card-header">
             <?php echo $conjunto[1] ?>
-            </div>
-
-            <div class="card-body">
-
-                <div class="row">
-
-                    <div class="postimg col">
-                    <img class="imgpost" src="<?php echo $conjunto[3]; ?>" alt="não foi">
-                    </div>
-
-                    <div class="conteud col" maxlength="221">
-                    <p class="cont"><?php echo $conjunto[4]; ?></p>
-                    </div>
-
-                </div>
-
-                <div class="aaa">
-                    <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
-                    <button class="botao">
-                    Salvar
-                    </button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pub card-footer">
-                Publicado por: <?php echo $conjunto[2]; ?>
-            </div>
         </div>
-        
-        <?php } ?>
-        <?php 
+
+        <div class="card-body">
+
+            <div class="row">
+
+                <div class="postimg col">
+                    <img class="imgpost" src="<?php echo $conjunto[3]; ?>" alt="não foi">
+                </div>
+
+                <div class="conteud col" maxlength="221">
+                    <p class="cont"><?php echo $conjunto[4]; ?></p>
+                </div>
+
+            </div>
+
+            <div class="aaa">
+                <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
+                    <button class="botao">
+                        Salvar
+                    </button>
+                </a>
+            </div>
+            <br>
+            <?php if ($id_user[5] == 1){?>
+
+            <div class="aaa">
+                <a href="../frontend/home.php?mod=<?php echo $conjunto[0]?>">
+                    <button class="botao">
+                        deletar
+                    </button>
+                </a>
+            </div>
+            <?php } ?>
+        </div>
+
+        <div class="pub card-footer">
+            Publicado por: <?php echo $conjunto[2]; ?>
+        </div>
+    </div>
+
+    <?php } ?>
+    <?php 
+        //deletando posts
+                if(isset($_GET['mod'])){
+                    
+                    $id_mod =(int) $_GET['mod'];
+                    
+                   $apagar = "DELETE FROM postagens WHERE idPostagem LIKE '$id_mod' ";
+
+                   $apagado = mysqli_query($conn, $apagar); 
+
+                   if($apagado){
+                       echo "<script>alert('apagado com sucesso')</script>"; 
+                   }
+
+                }
         //salvamento
 
         if(isset($_GET['salvar'])){
@@ -102,8 +127,8 @@
 
         
         ?>
-<h3>Posts salvos</h3>
- <pre>
+    <h3>Posts salvos</h3>
+    <pre>
      <?php print_r($_SESSION['salvo']); ?>     
 </pre>
     <?php 
