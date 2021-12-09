@@ -57,15 +57,15 @@
                     <img class="imgpost" src="<?php echo $conjunto[3]; ?>" alt="não foi">
                     </div>
 
-                    <div class="conteud col">
+                    <div class="conteud col" maxlength="221">
                     <p class="cont"><?php echo $conjunto[4]; ?></p>
                     </div>
 
                 </div>
 
-                <div class="botao">
+                <div class="aaa">
                     <a href="../frontend/home.php?salvar=<?php echo $conjunto[0]?>">
-                    <button class="button">
+                    <button class="botao">
                     Salvar
                     </button>
                     </a>

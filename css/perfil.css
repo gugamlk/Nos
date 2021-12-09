@@ -74,12 +74,14 @@ padding-top: 2%;
     background-color: #1c3B59;
     color: #89c0c2;
 }
-
-
-
-
-
-
+.salvos {
+    position: absolute;
+    width: 65%;
+    left: 18%;
+    background-color: #d6ebeb !important;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
 
 
 

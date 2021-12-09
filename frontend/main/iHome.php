@@ -32,8 +32,7 @@
             <br>
             Escreva o conteúdo de sua publicação:
             <br>
-            <textarea type="text" class="conteudo" name="conteudo">
-            </textarea>
+            <textarea rows="5" cols="200" maxlength="221" type="text" class="conteudo" name="conteudo"></textarea>
             
             <br>
             <input class="button" type="submit" name="inserir">

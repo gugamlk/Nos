@@ -19,7 +19,7 @@
                     <img src="../img/logo.png" class="logo" alt="logo" id="logo">
                 </a>
                 <a href="../frontend/home.php" class="navbar-brand">
-                <p class="myself"> Myself</p>
+                <p class="myself"> MySelf</p>
                 </a>
 
                 
